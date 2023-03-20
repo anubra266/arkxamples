@@ -26,20 +26,15 @@ export const getComponentSetup = (
   framework: Framework,
   styleSolution: StyleSolution,
   styleType: StyleType,
-  componentId: ComponentId,
-  colorMode: ColorMode
+  componentId: ComponentId
 ): ComponentSetup | undefined => {
   try {
     const details =
-      require(`component-data/${framework.toLocaleLowerCase()}/${styleSolution.toLocaleLowerCase()}/${styleType.toLocaleLowerCase()}/${componentId}`).default(
-        colorMode
-      );
+      require(`component-data/${framework.toLocaleLowerCase()}/${styleSolution.toLocaleLowerCase()}/${styleType.toLocaleLowerCase()}/${componentId}`).default;
     return details;
   } catch (error) {
     const details =
-      require(`component-data/${framework.toLocaleLowerCase()}/shared/404`).default(
-        colorMode
-      );
+      require(`component-data/${framework.toLocaleLowerCase()}/shared/404`).default;
     return details;
   }
 };
@@ -53,7 +48,6 @@ export const templates = {
 
 export const useComponentSetup = (componentId: ComponentId) => {
   const { framework, styleSolution, styleType } = useComponentConfig();
-  const { colorMode } = useColorMode();
 
   const component = getComponent(componentId as any);
   if (!component) return null;
@@ -62,8 +56,7 @@ export const useComponentSetup = (componentId: ComponentId) => {
     framework,
     styleSolution,
     styleType,
-    componentId,
-    colorMode
+    componentId
   );
 
   return componentDetails;

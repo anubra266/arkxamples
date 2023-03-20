@@ -15,18 +15,13 @@ import { Navbar } from "components/Navbar";
 import { ComponentControls } from "components/ComponentControls";
 import { EditorTabs } from "components/EditorTabs";
 import { ComponentParams } from "utils/types";
-import { useEffect } from "react";
-import { useColorMode } from "utils/useColorMode";
+import { useSyncSandboxColorMode } from "utils/useSyncSandboxColorMode";
 
 export default function Component(props: { params: ComponentParams }) {
   const { component: componentId } = props.params;
   const component = getComponent(componentId as any);
-  const { colorMode } = useColorMode();
 
-  useEffect(() => {
-    const iframe = document.querySelector("iframe");
-    iframe.contentWindow.postMessage({ colorMode }, "*");
-  }, [colorMode]);
+  useSyncSandboxColorMode();
 
   return (
     <>

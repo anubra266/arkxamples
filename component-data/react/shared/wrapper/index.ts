@@ -1,35 +1,44 @@
-import { ColorMode } from "utils/useColorMode";
-
-export const getSharedReactCode = (colorMode: ColorMode) => ({
+export const sharedReactCode = {
   "/index.css": require("!!raw-loader!./styles.css").default,
 
-  "/index.js": /*javascript*/ `import React, { StrictMode } from "react";
+  "/index.js": /*javascript*/ `
+  import React, { StrictMode } from "react";
   import { createRoot } from "react-dom/client";
   import "./index.css";
   
   import App from "./App";
-
-  function Ab(){
-   
   
-    return null
+  function ColorModeScript() {
+    React.useEffect(() => {
+      window.parent.postMessage({ action: "getColorMode" }, "*");
+      window.addEventListener("message", function (event) {
+        if (event.data.colorMode) {
+          switch (event.data.colorMode) {
+            case "light":
+              document.body.classList.add("light");
+              document.body.classList.remove("dark");
+              break;
+  
+            case "dark":
+              document.body.classList.add("dark");
+              document.body.classList.remove("light");
+              break;
+  
+            default:
+              break;
+          }
+        }
+      });
+    }, []);
+    return null;
   }
   
-
-  
-
- 
-  ${`document.body.classList.add("${colorMode}")`}
-
-  
-
-
   const root = createRoot(document.getElementById("root"));
   root.render(
     <StrictMode>
-    <Ab />
+      <ColorModeScript />
       <App />
     </StrictMode>
   );
   `,
-});
+};
