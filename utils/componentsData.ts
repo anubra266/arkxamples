@@ -1,10 +1,11 @@
-import { ComponentId } from "utils/types";
-import { useComponentConfig } from "./useComponentConfig";
 import {
   Framework,
   StyleSolution,
   StyleType,
 } from "utils/component-config/constants";
+import { ComponentId } from "utils/types";
+
+import { useComponentConfig } from "./useComponentConfig";
 
 export const components = [
   //

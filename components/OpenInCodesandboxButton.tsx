@@ -1,5 +1,4 @@
 import { UnstyledOpenInCodeSandboxButton } from "@codesandbox/sandpack-react";
-
 import { RxCodesandboxLogo } from "react-icons/rx";
 
 import { css, cx } from "design-system/css";

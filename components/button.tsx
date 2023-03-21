@@ -1,16 +1,16 @@
-import { css } from '../design-system/css'
+import { css } from "design-system/css";
 
 export function Button({ children, css: cssProp }) {
   return (
     <button
       className={css({
-        background: 'red',
-        color: 'white',
-        fontSize: '20px',
+        background: "red",
+        color: "white",
+        fontSize: "20px",
         ...cssProp,
       })}
     >
       {children}
     </button>
-  )
+  );
 }

@@ -1,5 +1,6 @@
 import { useSandpack } from "@codesandbox/sandpack-react";
 import { useEffect } from "react";
+
 import { useColorMode } from "utils/useColorMode";
 
 export const useSyncSandboxColorMode = () => {

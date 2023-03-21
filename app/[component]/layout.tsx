@@ -1,8 +1,9 @@
 "use client";
+
 import { SandpackLayout, SandpackProvider } from "@codesandbox/sandpack-react";
+import { PropsWithChildren } from "react";
 
 import { arkPackage, templates, useComponentSetup } from "utils/componentsData";
-import { PropsWithChildren } from "react";
 import { useComponentConfig } from "utils/useComponentConfig";
 
 const ComponentLayout = (

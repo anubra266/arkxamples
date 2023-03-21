@@ -1,4 +1,3 @@
-import { select } from "../../design-system/recipes";
 import {
   Portal,
   Select,
@@ -7,16 +6,20 @@ import {
   SelectPositioner,
   SelectTrigger,
 } from "@ark-ui/react";
-
-import { useComponentConfig } from "../../utils/useComponentConfig";
-import { SelectIcon } from "../SelectIcon";
-import { css, cx } from "../../design-system/css";
-import { ComponentControl } from "components/ComponentControls";
 import { Fragment } from "react";
+
+import { css, cx } from "design-system/css";
+import { select } from "design-system/recipes";
+
+import { ComponentControl } from "components/ComponentControls";
+
 import {
   STYLE_SOLUTIONS,
   StyleSolution,
 } from "utils/component-config/constants";
+import { useComponentConfig } from "utils/useComponentConfig";
+
+import { SelectIcon } from "../SelectIcon";
 
 type StyleTypeSwitchProps = ComponentControl & {
   styleSolution?: StyleSolution;

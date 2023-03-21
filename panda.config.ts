@@ -1,7 +1,8 @@
 import { defineConfig } from "@pandacss/dev";
+
+import { globalCss } from "./theme/global-css";
 import { recipes } from "./theme/recipes";
 import { textStyles } from "./theme/text-styles";
-import { globalCss } from "./theme/global-css";
 
 export default defineConfig({
   preflight: true,

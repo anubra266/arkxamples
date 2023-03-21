@@ -1,19 +1,21 @@
 "use client";
+
 import { Splitter, SplitterPanel, SplitterResizeTrigger } from "@ark-ui/react";
 import {
   SandpackCodeEditor,
-  SandpackPreview,
   SandpackFileExplorer,
+  SandpackPreview,
 } from "@codesandbox/sandpack-react";
 
-import { splitter } from "design-system/recipes";
 import { css, cx } from "design-system/css";
 import { Flex, panda } from "design-system/jsx";
+import { splitter } from "design-system/recipes";
 
-import { getComponent } from "utils/componentsData";
-import { Navbar } from "components/Navbar";
 import { ComponentControls } from "components/ComponentControls";
 import { EditorTabs } from "components/EditorTabs";
+import { Navbar } from "components/Navbar";
+
+import { getComponent } from "utils/componentsData";
 import { ComponentParams } from "utils/types";
 import { useSyncSandboxColorMode } from "utils/useSyncSandboxColorMode";
 
@@ -41,7 +43,7 @@ export default function Component(props: { params: ComponentParams }) {
           })
         )}
       >
-        <SplitterPanel id="preview" className={css({})}>
+        <SplitterPanel id="preview">
           <SandpackPreview
             showOpenInCodeSandbox={false}
             showRefreshButton={false}

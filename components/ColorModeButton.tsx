@@ -1,13 +1,14 @@
 "use client";
 
-import { useColorMode } from "../utils/useColorMode";
-
 import { Expand } from "@theme-toggles/react";
 import "@theme-toggles/react/css/Expand.css";
 import { useIsClient } from "usehooks-ts";
-import { button } from "design-system/recipes";
-import { cx } from "design-system/css/cx";
+
 import { css } from "design-system/css/css";
+import { cx } from "design-system/css/cx";
+import { button } from "design-system/recipes";
+
+import { useColorMode } from "utils/useColorMode";
 
 export const ColorModeButton = () => {
   const { toggle, colorMode } = useColorMode();

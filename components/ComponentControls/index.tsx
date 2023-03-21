@@ -1,16 +1,20 @@
-import { Navigation } from "components/ComponentControls/Navigation";
-import { Flex } from "../../design-system/jsx";
-import { FrameworkSwitch } from "../ComponentControls/FrameworkSwitch";
-import { StyleSolutionSwitch } from "../ComponentControls/StyleSolutionSwitch";
-import { StyleTypeSwitch } from "../ComponentControls/StyleTypeSwitch";
-import { useComponentConfig } from "utils/useComponentConfig";
 import { SelectProps } from "@ark-ui/react";
-import { Component } from "utils/types";
+
+import { Flex } from "design-system/jsx";
+
+import { Navigation } from "components/ComponentControls/Navigation";
+
 import {
   Framework,
   StyleSolution,
   StyleType,
 } from "utils/component-config/constants";
+import { Component } from "utils/types";
+import { useComponentConfig } from "utils/useComponentConfig";
+
+import { FrameworkSwitch } from "../ComponentControls/FrameworkSwitch";
+import { StyleSolutionSwitch } from "../ComponentControls/StyleSolutionSwitch";
+import { StyleTypeSwitch } from "../ComponentControls/StyleTypeSwitch";
 
 export type ComponentControlsProps = {
   component: Component;

@@ -1,9 +1,8 @@
 import { useActiveCode, useSandpack } from "@codesandbox/sandpack-react";
-
 import { HiOutlineClipboardList } from "react-icons/hi";
+import { useCopyToClipboard } from "usehooks-ts";
 
 import { IconButton } from "components/IconButton";
-import { useCopyToClipboard } from "usehooks-ts";
 
 export const CopyCodeButton = () => {
   const { code } = useActiveCode();

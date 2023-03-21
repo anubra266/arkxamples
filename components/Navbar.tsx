@@ -1,4 +1,5 @@
-import { Flex, panda } from "../design-system/jsx";
+import { Flex, panda } from "design-system/jsx";
+
 import { ColorModeButton } from "./ColorModeButton";
 
 export function Navbar() {

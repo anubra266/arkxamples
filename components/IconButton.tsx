@@ -1,8 +1,10 @@
 "use client";
-import { css, cx } from "../design-system/css";
-import { panda, type HTMLPandaProps } from "../design-system/jsx";
-import { button, type ButtonVariants } from "../design-system/recipes";
+
 import { cloneElement, isValidElement } from "react";
+
+import { css, cx } from "design-system/css";
+import { type HTMLPandaProps, panda } from "design-system/jsx";
+import { type ButtonVariants, button } from "design-system/recipes";
 
 export type IconButtonProps = HTMLPandaProps<"button"> &
   ButtonVariants & { icon?: React.ReactElement; "aria-label": string };

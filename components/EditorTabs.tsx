@@ -1,9 +1,12 @@
-import { Flex, panda } from "design-system/jsx";
 import { useSandpack } from "@codesandbox/sandpack-react";
-import { useComponentSetup } from "utils/componentsData";
-import { FormatCodeButton } from "components/FormatCodeButton";
+
+import { Flex, panda } from "design-system/jsx";
+
 import { CopyCodeButton } from "components/CopyCodeButton";
+import { FormatCodeButton } from "components/FormatCodeButton";
 import { OpenInCodesandboxButton } from "components/OpenInCodesandboxButton";
+
+import { useComponentSetup } from "utils/componentsData";
 import { ComponentId } from "utils/types";
 
 type EditorTabsProps = {

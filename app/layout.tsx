@@ -1,12 +1,13 @@
 "use client";
+
 import { cx } from "@/panda/css";
+import { getSandpackCssText } from "@codesandbox/sandpack-react";
 import { Fira_Code, Inter } from "next/font/google";
 import type { PropsWithChildren } from "react";
-import { getSandpackCssText } from "@codesandbox/sandpack-react";
-
-import "../index.css";
 
 import { ColorModeScript } from "components/ColorModeScript";
+
+import "../index.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const firaCode = Fira_Code({

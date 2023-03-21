@@ -1,4 +1,4 @@
-import { colorModeLocalStorageKey } from "../utils/useColorMode";
+import { colorModeLocalStorageKey } from "utils/useColorMode";
 
 /**
  * This script is used to set the color mode on the initial page load.

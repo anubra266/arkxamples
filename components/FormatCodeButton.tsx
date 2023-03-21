@@ -1,9 +1,8 @@
 import { useActiveCode } from "@codesandbox/sandpack-react";
-
-import { ImMagicWand } from "react-icons/im";
-
 import prettier from "prettier";
 import parserBabel from "prettier/parser-babel";
+import { ImMagicWand } from "react-icons/im";
+
 import { IconButton } from "components/IconButton";
 
 export const FormatCodeButton = () => {

@@ -1,13 +1,14 @@
-import { useLocalStorage } from "usehooks-ts";
 import { ReadonlyURLSearchParams, useSearchParams } from "next/navigation";
 import { useEffect } from "react";
+import { useLocalStorage } from "usehooks-ts";
+
+import { setComponentConfig } from "utils/component-config";
 import {
   FRAMEWORKS,
   STYLE_SOLUTIONS,
   defaultConfig,
 } from "utils/component-config/constants";
 import { ComponentConfig, ConfigSetterArg, ConfigValue } from "utils/types";
-import { setComponentConfig } from "utils/component-config";
 
 export const configLocalStorageKey = "arkxamples-component-config";
 

@@ -1,8 +1,8 @@
-import { css, cx } from "design-system/css";
-import { HTMLPandaProps, panda } from "design-system/jsx";
+import Link, { LinkProps } from "next/link";
 import { forwardRef } from "react";
 
-import Link, { LinkProps } from "next/link";
+import { css, cx } from "design-system/css";
+import { HTMLPandaProps, panda } from "design-system/jsx";
 
 const PandaLink = panda(Link);
 
