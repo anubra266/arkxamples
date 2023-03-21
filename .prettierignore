@@ -1,0 +1,5 @@
+design-system/
+.next
+.vscode
+.eslintrc.json
+next-env.d.ts
