@@ -1,6 +1,4 @@
-import { Flex, panda } from "design-system/jsx";
-import { useActiveCode, useSandpack } from "@codesandbox/sandpack-react";
-import { ComponentId, useComponentSetup } from "utils/componentsData";
+import { useActiveCode } from "@codesandbox/sandpack-react";
 
 import { ImMagicWand } from "react-icons/im";
 
@@ -31,7 +29,7 @@ export const FormatCodeButton = () => {
       onClick={runPrettier}
       icon={<ImMagicWand />}
       variant="tertiary"
-      //   size="sm"
+      size="xs"
     />
   );
 };

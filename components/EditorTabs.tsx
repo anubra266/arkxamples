@@ -3,6 +3,7 @@ import { useSandpack } from "@codesandbox/sandpack-react";
 import { ComponentId, useComponentSetup } from "utils/componentsData";
 import { FormatCodeButton } from "components/FormatCodeButton";
 import { CopyCodeButton } from "components/CopyCodeButton";
+import { OpenInCodesandboxButton } from "components/OpenInCodesandboxButton";
 
 type EditorTabsProps = {
   componentId: ComponentId;
@@ -62,6 +63,7 @@ export const EditorTabs = ({ componentId }: EditorTabsProps) => {
 
         <Flex align="center" ml="auto" gap="2">
           <CopyCodeButton />
+          <OpenInCodesandboxButton />
           <FormatCodeButton />
         </Flex>
       </Flex>

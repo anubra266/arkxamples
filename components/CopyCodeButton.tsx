@@ -17,10 +17,9 @@ export const CopyCodeButton = () => {
       aria-label={title}
       title={title}
       onClick={() => copy(code)}
-      ml="auto"
       icon={<HiOutlineClipboardList />}
       variant="tertiary"
-      size="sm"
+      size="xs"
     />
   );
 };

@@ -45,7 +45,6 @@ export default function Component(props: { params: ComponentParams }) {
           <SandpackPreview
             showOpenInCodeSandbox={false}
             showRefreshButton={false}
-            id="code-preview"
           />
         </SplitterPanel>
         <SplitterResizeTrigger id="preview:controls">
