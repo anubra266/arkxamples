@@ -5,6 +5,7 @@ specifiers:
   '@codesandbox/sandpack-react': ^2.1.9
   '@next/font': ^13.2.4
   '@pandacss/dev': 0.0.0-dev-20230213064154
+  '@theme-toggles/react': ^4.1.0
   '@types/node': 18.15.3
   '@types/react': 18.0.28
   '@types/react-dom': ^18.0.11
@@ -29,6 +30,7 @@ devDependencies:
   '@codesandbox/sandpack-react': 2.1.9_biqbaboplfbrettd7655fr4n2y
   '@next/font': 13.2.4
   '@pandacss/dev': 0.0.0-dev-20230213064154_h6mb5e5dbgrpws2muzkfzsieoq
+  '@theme-toggles/react': 4.1.0_biqbaboplfbrettd7655fr4n2y
   '@types/node': 18.15.3
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -1479,6 +1481,16 @@ packages:
     dependencies:
       tslib: 2.5.0
     dev: false
+
+  /@theme-toggles/react/4.1.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-h3SuJMsej8DfelHt5fjNIlaMfJOK52Vku4pPDVoHaTwjAcoTr4fn8hzeur2oiqWBYFYfKugvv1RdQaBFXaiPKg==}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: true
 
   /@ts-morph/common/0.18.1:
     resolution: {integrity: sha512-RVE+zSRICWRsfrkAw5qCAK+4ZH9kwEFv5h0+/YeHTLieWP7F4wWq4JsKFuNWG+fYh/KF+8rAtgdj5zb2mm+DVA==}

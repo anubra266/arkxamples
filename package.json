@@ -20,6 +20,7 @@
     "@codesandbox/sandpack-react": "^2.1.9",
     "@next/font": "^13.2.4",
     "@pandacss/dev": "0.0.0-dev-20230213064154",
+    "@theme-toggles/react": "^4.1.0",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "^18.0.11",

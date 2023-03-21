@@ -1,22 +1,35 @@
 "use client";
 
-import { BsSunFill, BsMoonFill } from "react-icons/bs";
 import { useColorMode } from "../utils/useColorMode";
-import { IconButton } from "./IconButton";
+
+import { Expand } from "@theme-toggles/react";
+import "@theme-toggles/react/css/Expand.css";
+import { useIsClient } from "usehooks-ts";
+import { button } from "design-system/recipes";
+import { cx } from "design-system/css/cx";
+import { css } from "design-system/css/css";
 
 export const ColorModeButton = () => {
   const { toggle, colorMode } = useColorMode();
+
+  const isClient = useIsClient();
+  // prevent false positive for server-side rendering
+  if (!isClient) {
+    return null;
+  }
   return (
-    <>
-      <IconButton
-        variant="link"
-        aria-label={`Switch to ${colorMode === "light" ? "Dark" : "Light"}`}
-        size="xs"
-        // color="fg.subtle"
-        // bg="bg.subtle"
-        icon={colorMode === "light" ? <BsMoonFill /> : <BsSunFill />}
-        onClick={toggle}
-      />
-    </>
+    <Expand
+      onToggle={toggle}
+      toggled={colorMode === "light"}
+      className={cx(
+        button({ variant: "tertiary", size: "xs" }),
+        css({
+          fontSize: "lg",
+          px: "0",
+        })
+      )}
+      data-scope="button"
+      data-part="root"
+    />
   );
 };
