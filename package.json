@@ -9,7 +9,7 @@
     "lint": "next lint",
     "css": "PANDA_DEBUG=* panda",
     "css:dev": "PANDA_DEBUG=* panda --watch",
-    "format": "prettier --write \"./**/*.{ts,tsx,json}\""
+    "format": "prettier --write \"./**/*.{ts,tsx,json,js}\""
   },
   "dependencies": {
     "next": "13.2.4",

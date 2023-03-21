@@ -30,8 +30,8 @@ import {
   StyleSolution,
   StyleType,
 } from "utils/component-config/constants";
-import { components } from "utils/componentsData";
 import { useComponentConfig, useQueryString } from "utils/useComponentConfig";
+import { useComponentsSearch } from "utils/useComponentsSearch";
 
 import { CloseButton } from "../CloseButton";
 
@@ -49,10 +49,17 @@ export function Navigation(props: ComponentControlsProps) {
     styleType,
   });
 
-  const queryString = useQueryString(tempConfig);
+  const uriQuery = useQueryString(tempConfig);
+
+  const { query, setQuery, filteredComponents, emptyResult } =
+    useComponentsSearch();
+
+  const onDialogClose = () => {
+    setQuery("");
+  };
 
   return (
-    <Dialog initialFocusEl={() => inputRef.current}>
+    <Dialog initialFocusEl={() => inputRef.current} onClose={onDialogClose}>
       {({ close }) => (
         <>
           <DialogTrigger>
@@ -138,10 +145,18 @@ export function Navigation(props: ComponentControlsProps) {
                       ref={inputRef}
                       className={input()}
                       placeholder="Search components..."
+                      value={query}
+                      onChange={(e) => setQuery(e.target.value)}
                     />
                   </Stack>
+                  {emptyResult ? (
+                    <panda.span textAlign="center" fontSize="sm" width="full">
+                      Can&apos;t find that component. Perharps an{" "}
+                      <b>invention</b> of yours? 🧐
+                    </panda.span>
+                  ) : null}
                   <Stack w="full" gap="3">
-                    {components.map((comp) => (
+                    {filteredComponents.map((comp) => (
                       <LinkBox
                         key={comp.id}
                         onClick={close}
@@ -152,13 +167,17 @@ export function Navigation(props: ComponentControlsProps) {
                         cursor="pointer"
                         alignItems="center"
                         gap="2"
-                        className="group"
-                        color={{ base: "#373A35", _dark: "gray.200" }}
-                        bg={{ base: "lightGrey", _dark: "gray.800" }}
-                        _hover={{
-                          color: { base: "white", _dark: "white" },
-                          bg: { base: "purple.800", _dark: "purple.500" },
-                        }}
+                        className={cx(
+                          "group",
+                          css({
+                            color: { base: "#373A35", _dark: "gray.200" },
+                            bg: { base: "lightGrey", _dark: "gray.800" },
+                            _hover: {
+                              color: { base: "white", _dark: "white" },
+                              bg: { base: "purple.800", _dark: "purple.500" },
+                            },
+                          })
+                        )}
                         transition="all 0.3s ease"
                       >
                         <Flex
@@ -182,7 +201,7 @@ export function Navigation(props: ComponentControlsProps) {
                           fontSize="lg"
                           fontWeight="medium"
                           letterSpacing="wide"
-                          href={`${comp.id}${queryString}`}
+                          href={`${comp.id}${uriQuery}`}
                         >
                           {comp.label}
                         </LinkOverlay>

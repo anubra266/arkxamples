@@ -69,7 +69,7 @@ export const LinkBox = forwardRef<HTMLDivElement, LinkBoxProps>(
           className,
           css({
             /* Elevate the links and abbreviations up */
-            "& a[href]:not(.linkbox__overlay), abbr[title]": {
+            "& a[href]:not(.linkbox__overlay), & abbr[title]": {
               position: "relative",
               zIndex: 1,
             },
