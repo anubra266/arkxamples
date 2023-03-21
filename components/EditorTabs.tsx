@@ -1,9 +1,10 @@
 import { Flex, panda } from "design-system/jsx";
 import { useSandpack } from "@codesandbox/sandpack-react";
-import { ComponentId, useComponentSetup } from "utils/componentsData";
+import { useComponentSetup } from "utils/componentsData";
 import { FormatCodeButton } from "components/FormatCodeButton";
 import { CopyCodeButton } from "components/CopyCodeButton";
 import { OpenInCodesandboxButton } from "components/OpenInCodesandboxButton";
+import { ComponentId } from "utils/types";
 
 type EditorTabsProps = {
   componentId: ComponentId;
@@ -61,7 +62,7 @@ export const EditorTabs = ({ componentId }: EditorTabsProps) => {
           </panda.button>
         ))}
 
-        <Flex align="center" ml="auto" gap="2">
+        <Flex align="center" ml="auto" gap="1">
           <CopyCodeButton />
           <OpenInCodesandboxButton />
           <FormatCodeButton />

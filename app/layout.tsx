@@ -1,6 +1,6 @@
 "use client";
 import { cx } from "@/panda/css";
-import { Fira_Code, Inter } from "@next/font/google";
+import { Fira_Code, Inter } from "next/font/google";
 import type { PropsWithChildren } from "react";
 import { getSandpackCssText } from "@codesandbox/sandpack-react";
 

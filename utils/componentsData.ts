@@ -1,14 +1,16 @@
-import { ColorMode, useColorMode } from "utils/useColorMode";
+import { ComponentId } from "utils/types";
+import { useComponentConfig } from "./useComponentConfig";
 import {
   Framework,
   StyleSolution,
   StyleType,
-  useComponentConfig,
-} from "./useComponentConfig";
+} from "utils/component-config/constants";
 
-export const components = [{ id: "checkbox", Label: "Checkbox" }] as const;
-
-export type ComponentId = (typeof components)[number]["id"];
+export const components = [
+  //
+  { id: "checkbox", label: "Checkbox" },
+  //
+] as const;
 
 export const getComponent = (id: ComponentId) =>
   components.find((component) => component.id === id);

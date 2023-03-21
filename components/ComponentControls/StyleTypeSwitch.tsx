@@ -8,27 +8,32 @@ import {
   SelectTrigger,
 } from "@ark-ui/react";
 
-import {
-  STYLE_SOLUTIONS,
-  useComponentConfig,
-  StyleType,
-} from "../../utils/useComponentConfig";
+import { useComponentConfig } from "../../utils/useComponentConfig";
 import { SelectIcon } from "../SelectIcon";
 import { css, cx } from "../../design-system/css";
+import { ComponentControl } from "components/ComponentControls";
+import { Fragment } from "react";
+import {
+  STYLE_SOLUTIONS,
+  StyleSolution,
+} from "utils/component-config/constants";
 
-export function StyleTypeSwitch() {
-  const { styleType, styleSolution, setComponentConfig } = useComponentConfig();
+type StyleTypeSwitchProps = ComponentControl & {
+  styleSolution?: StyleSolution;
+};
+export function StyleTypeSwitch(props: StyleTypeSwitchProps) {
+  const Wrapper = props.norPortal ? Fragment : Portal;
 
-  const styleTypeOption = STYLE_SOLUTIONS[styleSolution].types.find(
-    (opt) => opt.value === styleType
-  );
+  const { styleType, styleSolution } = useComponentConfig();
+
+  const styleTypeOption = STYLE_SOLUTIONS[
+    props.styleSolution ?? styleSolution
+  ].types.find((opt) => opt.value === styleType);
   return (
     <Select
       positioning={{ gutter: 4 }}
       selectedOption={styleTypeOption}
-      onChange={(opt) => {
-        setComponentConfig("styleType", opt?.value as StyleType);
-      }}
+      onChange={props.onChange}
     >
       {({ selectedOption, isOpen }) => (
         <>
@@ -41,7 +46,7 @@ export function StyleTypeSwitch() {
               <SelectIcon isOpen={isOpen} />
             </button>
           </SelectTrigger>
-          <Portal>
+          <Wrapper>
             <SelectPositioner className={select({ size: "xs" })}>
               <SelectContent>
                 {STYLE_SOLUTIONS[styleSolution].types.map((styleType) => (
@@ -53,7 +58,7 @@ export function StyleTypeSwitch() {
                 ))}
               </SelectContent>
             </SelectPositioner>
-          </Portal>
+          </Wrapper>
         </>
       )}
     </Select>

@@ -1,26 +1,27 @@
-import {
-  Dialog,
-  DialogBackdrop,
-  DialogCloseTrigger,
-  DialogContainer,
-  DialogContent,
-  DialogDescription,
-  DialogTitle,
-  DialogTrigger,
-  Portal,
-} from "@ark-ui/react";
-import { Flex, panda, Stack } from "../../design-system/jsx";
-import { dialog } from "../../design-system/recipes";
+import { Navigation } from "components/ComponentControls/Navigation";
+import { Flex } from "../../design-system/jsx";
 import { FrameworkSwitch } from "../ComponentControls/FrameworkSwitch";
 import { StyleSolutionSwitch } from "../ComponentControls/StyleSolutionSwitch";
 import { StyleTypeSwitch } from "../ComponentControls/StyleTypeSwitch";
-import { CloseButton } from "../CloseButton";
+import { useComponentConfig } from "utils/useComponentConfig";
+import { SelectProps } from "@ark-ui/react";
+import { Component } from "utils/types";
+import {
+  Framework,
+  StyleSolution,
+  StyleType,
+} from "utils/component-config/constants";
 
-type ComponentControlsProps = {
-  component: any;
+export type ComponentControlsProps = {
+  component: Component;
+};
+
+export type ComponentControl = {
+  onChange: SelectProps["onChange"];
+  norPortal?: boolean;
 };
 export function ComponentControls(props: ComponentControlsProps) {
-  const { component } = props;
+  const { setComponentConfig } = useComponentConfig();
 
   return (
     <Flex
@@ -30,37 +31,24 @@ export function ComponentControls(props: ComponentControlsProps) {
       borderColor="border.default"
       align="center"
     >
-      <Dialog>
-        <DialogTrigger>
-          <panda.span fontWeight="medium" fontSize="sm" cursor="pointer">
-            {component?.Label}
-          </panda.span>
-        </DialogTrigger>
-        <Portal>
-          <DialogBackdrop className={dialog()} />
-          <DialogContainer className={dialog()}>
-            <DialogContent>
-              <Stack gap="8" p="6">
-                <Stack gap="1">
-                  <DialogTitle>Dialog Title</DialogTitle>
-                  <DialogDescription>Dialog Description</DialogDescription>
-                </Stack>
-                <Stack gap="3" direction="row" width="full">
-                  More Content
-                </Stack>
-              </Stack>
-              <DialogCloseTrigger>
-                <CloseButton aria-label="Close dialog" size="sm" />
-              </DialogCloseTrigger>
-            </DialogContent>
-          </DialogContainer>
-        </Portal>
-      </Dialog>
+      <Navigation {...props} />
 
       <Flex ml="auto" gap="1">
-        <FrameworkSwitch />
-        <StyleSolutionSwitch />
-        <StyleTypeSwitch />
+        <FrameworkSwitch
+          onChange={(opt) => {
+            setComponentConfig("framework", opt?.value as Framework);
+          }}
+        />
+        <StyleSolutionSwitch
+          onChange={(opt) => {
+            setComponentConfig("styleSolution", opt?.value as StyleSolution);
+          }}
+        />
+        <StyleTypeSwitch
+          onChange={(opt) => {
+            setComponentConfig("styleType", opt?.value as StyleType);
+          }}
+        />
       </Flex>
     </Flex>
   );

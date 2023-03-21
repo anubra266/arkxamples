@@ -8,24 +8,22 @@ import {
   SelectTrigger,
 } from "@ark-ui/react";
 
-import {
-  STYLE_SOLUTIONS,
-  useComponentConfig,
-  StyleSolution,
-} from "../../utils/useComponentConfig";
+import { useComponentConfig } from "../../utils/useComponentConfig";
+import { STYLE_SOLUTIONS } from "utils/component-config/constants";
 import { SelectIcon } from "../SelectIcon";
 import { css, cx } from "../../design-system/css";
+import { ComponentControl } from "components/ComponentControls";
+import { Fragment } from "react";
 
-export function StyleSolutionSwitch() {
-  const { styleSolution, setComponentConfig } = useComponentConfig();
+export function StyleSolutionSwitch(props: ComponentControl) {
+  const Wrapper = props.norPortal ? Fragment : Portal;
+  const { styleSolution } = useComponentConfig();
 
   return (
     <Select
       positioning={{ gutter: 4 }}
       defaultValue={STYLE_SOLUTIONS[styleSolution]}
-      onChange={(opt) => {
-        setComponentConfig("styleSolution", opt?.value as StyleSolution);
-      }}
+      onChange={props.onChange}
     >
       {({ selectedOption, isOpen }) => (
         <>
@@ -38,7 +36,7 @@ export function StyleSolutionSwitch() {
               <SelectIcon isOpen={isOpen} />
             </button>
           </SelectTrigger>
-          <Portal>
+          <Wrapper>
             <SelectPositioner className={select({ size: "xs" })}>
               <SelectContent>
                 {Object.values(STYLE_SOLUTIONS).map((styleSolution) => (
@@ -50,7 +48,7 @@ export function StyleSolutionSwitch() {
                 ))}
               </SelectContent>
             </SelectPositioner>
-          </Portal>
+          </Wrapper>
         </>
       )}
     </Select>

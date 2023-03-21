@@ -16,6 +16,7 @@ export const dialog = defineRecipe({
       inset: "0",
       position: "fixed",
       zIndex: "200",
+      pointerEvents: "auto",
     },
     container: {
       alignItems: "center",

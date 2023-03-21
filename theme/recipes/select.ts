@@ -50,6 +50,9 @@ export const select = defineRecipe({
         mb: "0",
       },
     },
+    positioner: {
+      zIndex: "1",
+    },
   }),
   defaultVariants: {
     variant: "outline",
@@ -65,6 +68,7 @@ export const select = defineRecipe({
           color: "fg.default",
           textAlign: "left",
           width: "full",
+          borderColor: "border.default",
           _focus: {
             zIndex: 1,
             "--shadow": {

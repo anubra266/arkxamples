@@ -1,4 +1,4 @@
-import { select } from "../../design-system/recipes";
+import { select } from "design-system/recipes";
 import {
   Portal,
   Select,
@@ -8,24 +8,23 @@ import {
   SelectTrigger,
 } from "@ark-ui/react";
 
-import {
-  FRAMEWORKS,
-  useComponentConfig,
-  Framework,
-} from "../../utils/useComponentConfig";
+import { useComponentConfig } from "utils/useComponentConfig";
 import { SelectIcon } from "../SelectIcon";
 import { css, cx } from "../../design-system/css";
+import { ComponentControl } from "components/ComponentControls";
+import { Fragment } from "react";
+import { FRAMEWORKS } from "utils/component-config/constants";
 
-export function FrameworkSwitch() {
-  const { framework, setComponentConfig } = useComponentConfig();
+export function FrameworkSwitch(props: ComponentControl) {
+  const Wrapper = props.norPortal ? Fragment : Portal;
+
+  const { framework } = useComponentConfig();
 
   return (
     <Select
       positioning={{ gutter: 4 }}
       defaultValue={FRAMEWORKS[framework]}
-      onChange={(opt) => {
-        setComponentConfig("framework", opt?.value as Framework);
-      }}
+      onChange={props.onChange}
     >
       {({ selectedOption, isOpen }) => (
         <>
@@ -38,7 +37,7 @@ export function FrameworkSwitch() {
               <SelectIcon isOpen={isOpen} />
             </button>
           </SelectTrigger>
-          <Portal>
+          <Wrapper>
             <SelectPositioner className={select({ size: "xs" })}>
               <SelectContent>
                 {Object.values(FRAMEWORKS).map((framework) => (
@@ -50,7 +49,7 @@ export function FrameworkSwitch() {
                 ))}
               </SelectContent>
             </SelectPositioner>
-          </Portal>
+          </Wrapper>
         </>
       )}
     </Select>
