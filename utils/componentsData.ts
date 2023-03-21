@@ -53,7 +53,9 @@ export const useComponentSetup = (componentId: ComponentId) => {
   const { framework, styleSolution, styleType } = useComponentConfig();
 
   const component = getComponent(componentId as any);
-  if (!component) return null;
+  if (!component) {
+    // Non existent component. Might want to handle this differently
+  }
 
   const componentDetails = getComponentSetup(
     framework,

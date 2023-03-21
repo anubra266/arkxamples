@@ -15,8 +15,6 @@ const ComponentLayout = (
 
   const componentDetails = useComponentSetup(componentId as any);
 
-  if (!componentDetails) return "select a component";
-
   return (
     // Multiple themes suck right now https://github.com/codesandbox/sandpack/issues/849
     <SandpackProvider

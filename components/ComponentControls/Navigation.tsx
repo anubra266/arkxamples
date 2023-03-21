@@ -74,7 +74,7 @@ export function Navigation(props: ComponentControlsProps) {
                 color: { base: "", _dark: "purple.400" },
               }}
             >
-              {component?.label}
+              {component?.label ?? "Components"}
             </panda.span>
           </DialogTrigger>
           <Portal>
