@@ -8,118 +8,87 @@ Built with [CSS panda](), [Sandpack](sandpack.codesandbox.io/) and ❤️
 
 ### Vanilla CSS
 
-| Scoped          | React | Vue | Solid |
-| --------------- | ----- | --- | ----- |
-| Accordion       | 🟢    | ⚪  | ⚪    |
-| Carousel (Beta) | ⚪    | ⚪  | ⚪    |
-| Checkbox        | 🟢    | ⚪  | ⚪    |
-| Dialog          | ⚪    | ⚪  | ⚪    |
-| Combobox        | ⚪    | ⚪  | ⚪    |
-| Editable        | ⚪    | ⚪  | ⚪    |
-| Environment     | ⚪    | ⚪  | ⚪    |
-| Hover Card      | ⚪    | ⚪  | ⚪    |
-| Menu            | ⚪    | ⚪  | ⚪    |
-| Number Input    | ⚪    | ⚪  | ⚪    |
-| Pagination      | ⚪    | ⚪  | ⚪    |
-| Pin Input       | ⚪    | ⚪  | ⚪    |
-| Popover         | ⚪    | ⚪  | ⚪    |
-| Pressable       | ⚪    | ⚪  | ⚪    |
-| Radio Group     | ⚪    | ⚪  | ⚪    |
-| Range Slider    | ⚪    | ⚪  | ⚪    |
-| Rating          | ⚪    | ⚪  | ⚪    |
-| Select          | ⚪    | ⚪  | ⚪    |
-| Slider          | ⚪    | ⚪  | ⚪    |
-| Splitter        | ⚪    | ⚪  | ⚪    |
-| Tabs            | ⚪    | ⚪  | ⚪    |
-| Tags Input      | ⚪    | ⚪  | ⚪    |
-| Toast           | ⚪    | ⚪  | ⚪    |
-| Tooltip         | ⚪    | ⚪  | ⚪    |
+| Scoped       | React | Vue | Solid |
+| ------------ | ----- | --- | ----- |
+| Accordion    | 🟢    | ⚪  | ⚪    |
+| Carousel     | ⚪    | ⚪  | ⚪    |
+| Checkbox     | 🟢    | ⚪  | ⚪    |
+| Dialog       | ⚪    | ⚪  | ⚪    |
+| Combobox     | ⚪    | ⚪  | ⚪    |
+| Editable     | ⚪    | ⚪  | ⚪    |
+| Environment  | ⚪    | ⚪  | ⚪    |
+| Hover Card   | ⚪    | ⚪  | ⚪    |
+| Menu         | ⚪    | ⚪  | ⚪    |
+| Number Input | ⚪    | ⚪  | ⚪    |
+| Pagination   | ⚪    | ⚪  | ⚪    |
+| Pin Input    | ⚪    | ⚪  | ⚪    |
+| Popover      | ⚪    | ⚪  | ⚪    |
+| Pressable    | ⚪    | ⚪  | ⚪    |
+| Radio Group  | ⚪    | ⚪  | ⚪    |
+| Range Slider | ⚪    | ⚪  | ⚪    |
+| Rating       | ⚪    | ⚪  | ⚪    |
+| Select       | ⚪    | ⚪  | ⚪    |
+| Slider       | ⚪    | ⚪  | ⚪    |
+| Splitter     | ⚪    | ⚪  | ⚪    |
+| Tabs         | ⚪    | ⚪  | ⚪    |
+| Tags Input   | ⚪    | ⚪  | ⚪    |
+| Toast        | ⚪    | ⚪  | ⚪    |
+| Tooltip      | ⚪    | ⚪  | ⚪    |
 
 ### Tailwind
 
-| Inline          | React | Vue | Solid |
-| --------------- | ----- | --- | ----- |
-| Accordion       | ⚪    | ⚪  | ⚪    |
-| Carousel (Beta) | ⚪    | ⚪  | ⚪    |
-| Checkbox        | ⚪    | ⚪  | ⚪    |
-| Dialog          | ⚪    | ⚪  | ⚪    |
-| Combobox        | ⚪    | ⚪  | ⚪    |
-| Editable        | ⚪    | ⚪  | ⚪    |
-| Environment     | ⚪    | ⚪  | ⚪    |
-| Hover Card      | ⚪    | ⚪  | ⚪    |
-| Menu            | ⚪    | ⚪  | ⚪    |
-| Number Input    | ⚪    | ⚪  | ⚪    |
-| Pagination      | ⚪    | ⚪  | ⚪    |
-| Pin Input       | ⚪    | ⚪  | ⚪    |
-| Popover         | ⚪    | ⚪  | ⚪    |
-| Pressable       | ⚪    | ⚪  | ⚪    |
-| Radio Group     | ⚪    | ⚪  | ⚪    |
-| Range Slider    | ⚪    | ⚪  | ⚪    |
-| Rating          | ⚪    | ⚪  | ⚪    |
-| Select          | ⚪    | ⚪  | ⚪    |
-| Slider          | ⚪    | ⚪  | ⚪    |
-| Splitter        | ⚪    | ⚪  | ⚪    |
-| Tabs            | ⚪    | ⚪  | ⚪    |
-| Tags Input      | ⚪    | ⚪  | ⚪    |
-| Toast           | ⚪    | ⚪  | ⚪    |
-| Tooltip         | ⚪    | ⚪  | ⚪    |
+| Inline       | React | Vue | Solid |
+| ------------ | ----- | --- | ----- |
+| Accordion    | ⚪    | ⚪  | ⚪    |
+| Carousel     | ⚪    | ⚪  | ⚪    |
+| Checkbox     | ⚪    | ⚪  | ⚪    |
+| Dialog       | ⚪    | ⚪  | ⚪    |
+| Combobox     | ⚪    | ⚪  | ⚪    |
+| Editable     | ⚪    | ⚪  | ⚪    |
+| Environment  | ⚪    | ⚪  | ⚪    |
+| Hover Card   | ⚪    | ⚪  | ⚪    |
+| Menu         | ⚪    | ⚪  | ⚪    |
+| Number Input | ⚪    | ⚪  | ⚪    |
+| Pagination   | ⚪    | ⚪  | ⚪    |
+| Pin Input    | ⚪    | ⚪  | ⚪    |
+| Popover      | ⚪    | ⚪  | ⚪    |
+| Pressable    | ⚪    | ⚪  | ⚪    |
+| Radio Group  | ⚪    | ⚪  | ⚪    |
+| Range Slider | ⚪    | ⚪  | ⚪    |
+| Rating       | ⚪    | ⚪  | ⚪    |
+| Select       | ⚪    | ⚪  | ⚪    |
+| Slider       | ⚪    | ⚪  | ⚪    |
+| Splitter     | ⚪    | ⚪  | ⚪    |
+| Tabs         | ⚪    | ⚪  | ⚪    |
+| Tags Input   | ⚪    | ⚪  | ⚪    |
+| Toast        | ⚪    | ⚪  | ⚪    |
+| Tooltip      | ⚪    | ⚪  | ⚪    |
 
 ### CSS Panda
 
-<div style="display: flex;">
-
-| CSS Function    | React | Vue | Solid |
-| --------------- | ----- | --- | ----- |
-| Accordion       | ⚪    | ⚪  | ⚪    |
-| Carousel (Beta) | ⚪    | ⚪  | ⚪    |
-| Checkbox        | ⚪    | ⚪  | ⚪    |
-| Dialog          | ⚪    | ⚪  | ⚪    |
-| Combobox        | ⚪    | ⚪  | ⚪    |
-| Editable        | ⚪    | ⚪  | ⚪    |
-| Environment     | ⚪    | ⚪  | ⚪    |
-| Hover Card      | ⚪    | ⚪  | ⚪    |
-| Menu            | ⚪    | ⚪  | ⚪    |
-| Number Input    | ⚪    | ⚪  | ⚪    |
-| Pagination      | ⚪    | ⚪  | ⚪    |
-| Pin Input       | ⚪    | ⚪  | ⚪    |
-| Popover         | ⚪    | ⚪  | ⚪    |
-| Pressable       | ⚪    | ⚪  | ⚪    |
-| Radio Group     | ⚪    | ⚪  | ⚪    |
-| Range Slider    | ⚪    | ⚪  | ⚪    |
-| Rating          | ⚪    | ⚪  | ⚪    |
-| Select          | ⚪    | ⚪  | ⚪    |
-| Slider          | ⚪    | ⚪  | ⚪    |
-| Splitter        | ⚪    | ⚪  | ⚪    |
-| Tabs            | ⚪    | ⚪  | ⚪    |
-| Tags Input      | ⚪    | ⚪  | ⚪    |
-| Toast           | ⚪    | ⚪  | ⚪    |
-| Tooltip         | ⚪    | ⚪  | ⚪    |
-
-| Recipes         | React | Vue | Solid |
-| --------------- | ----- | --- | ----- |
-| Accordion       | ⚪    | ⚪  | ⚪    |
-| Carousel (Beta) | ⚪    | ⚪  | ⚪    |
-| Checkbox        | ⚪    | ⚪  | ⚪    |
-| Dialog          | ⚪    | ⚪  | ⚪    |
-| Combobox        | ⚪    | ⚪  | ⚪    |
-| Editable        | ⚪    | ⚪  | ⚪    |
-| Environment     | ⚪    | ⚪  | ⚪    |
-| Hover Card      | ⚪    | ⚪  | ⚪    |
-| Menu            | ⚪    | ⚪  | ⚪    |
-| Number Input    | ⚪    | ⚪  | ⚪    |
-| Pagination      | ⚪    | ⚪  | ⚪    |
-| Pin Input       | ⚪    | ⚪  | ⚪    |
-| Popover         | ⚪    | ⚪  | ⚪    |
-| Pressable       | ⚪    | ⚪  | ⚪    |
-| Radio Group     | ⚪    | ⚪  | ⚪    |
-| Range Slider    | ⚪    | ⚪  | ⚪    |
-| Rating          | ⚪    | ⚪  | ⚪    |
-| Select          | ⚪    | ⚪  | ⚪    |
-| Slider          | ⚪    | ⚪  | ⚪    |
-| Splitter        | ⚪    | ⚪  | ⚪    |
-| Tabs            | ⚪    | ⚪  | ⚪    |
-| Tags Input      | ⚪    | ⚪  | ⚪    |
-| Toast           | ⚪    | ⚪  | ⚪    |
-| Tooltip         | ⚪    | ⚪  | ⚪    |
-
-</div>
+| CSS FUNCTION | React | Vue | Solid |     | RECIPE       | React | Vue | Solid |
+| ------------ | ----- | --- | ----- | --- | ------------ | ----- | --- | ----- |
+| Accordion    | ⚪    | ⚪  | ⚪    |     | Accordion    | ⚪    | ⚪  | ⚪    |
+| Carousel     | ⚪    | ⚪  | ⚪    |     | Carousel     | ⚪    | ⚪  | ⚪    |
+| Checkbox     | ⚪    | ⚪  | ⚪    |     | Checkbox     | ⚪    | ⚪  | ⚪    |
+| Dialog       | ⚪    | ⚪  | ⚪    |     | Dialog       | ⚪    | ⚪  | ⚪    |
+| Combobox     | ⚪    | ⚪  | ⚪    |     | Combobox     | ⚪    | ⚪  | ⚪    |
+| Editable     | ⚪    | ⚪  | ⚪    |     | Editable     | ⚪    | ⚪  | ⚪    |
+| Environment  | ⚪    | ⚪  | ⚪    |     | Environment  | ⚪    | ⚪  | ⚪    |
+| Hover Card   | ⚪    | ⚪  | ⚪    |     | Hover Card   | ⚪    | ⚪  | ⚪    |
+| Menu         | ⚪    | ⚪  | ⚪    |     | Menu         | ⚪    | ⚪  | ⚪    |
+| Number Input | ⚪    | ⚪  | ⚪    |     | Number Input | ⚪    | ⚪  | ⚪    |
+| Pagination   | ⚪    | ⚪  | ⚪    |     | Pagination   | ⚪    | ⚪  | ⚪    |
+| Pin Input    | ⚪    | ⚪  | ⚪    |     | Pin Input    | ⚪    | ⚪  | ⚪    |
+| Popover      | ⚪    | ⚪  | ⚪    |     | Popover      | ⚪    | ⚪  | ⚪    |
+| Pressable    | ⚪    | ⚪  | ⚪    |     | Pressable    | ⚪    | ⚪  | ⚪    |
+| Radio Group  | ⚪    | ⚪  | ⚪    |     | Radio Group  | ⚪    | ⚪  | ⚪    |
+| Range Slider | ⚪    | ⚪  | ⚪    |     | Range Slider | ⚪    | ⚪  | ⚪    |
+| Rating       | ⚪    | ⚪  | ⚪    |     | Rating       | ⚪    | ⚪  | ⚪    |
+| Select       | ⚪    | ⚪  | ⚪    |     | Select       | ⚪    | ⚪  | ⚪    |
+| Slider       | ⚪    | ⚪  | ⚪    |     | Slider       | ⚪    | ⚪  | ⚪    |
+| Splitter     | ⚪    | ⚪  | ⚪    |     | Splitter     | ⚪    | ⚪  | ⚪    |
+| Tabs         | ⚪    | ⚪  | ⚪    |     | Tabs         | ⚪    | ⚪  | ⚪    |
+| Tags Input   | ⚪    | ⚪  | ⚪    |     | Tags Input   | ⚪    | ⚪  | ⚪    |
+| Toast        | ⚪    | ⚪  | ⚪    |     | Toast        | ⚪    | ⚪  | ⚪    |
+| Tooltip      | ⚪    | ⚪  | ⚪    |     | Tooltip      | ⚪    | ⚪  | ⚪    |
