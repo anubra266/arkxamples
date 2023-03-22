@@ -19,7 +19,7 @@ export const arkPackage = {
 
 export const templates = {
   [Framework.REACT]: "react",
-  [Framework.VUE_JSX]: "",
-  [Framework.VUE_SFC]: "",
-  [Framework.SOLID]: "",
+  // [Framework.VUE_JSX]: "",
+  // [Framework.VUE_SFC]: "",
+  // [Framework.SOLID]: "",
 } as const;
