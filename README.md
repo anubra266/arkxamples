@@ -23,7 +23,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Environment  | 🌚    | 🌚  | 🌚    |
 | Hover Card   | 🟢    | ⚪  | ⚪    |
 | Menu         | 🟢    | ⚪  | ⚪    |
-| Number Input | ⚪    | ⚪  | ⚪    |
+| Number Input | 🟢    | ⚪  | ⚪    |
 | Pagination   | ⚪    | ⚪  | ⚪    |
 | Pin Input    | ⚪    | ⚪  | ⚪    |
 | Popover      | ⚪    | ⚪  | ⚪    |

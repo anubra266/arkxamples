@@ -1,0 +1,106 @@
+[data-scope="number-input"][data-part="root"] {
+  --border-default: #e7e5e4;
+  --border-emphasized: #a6a6a6;
+  --bg-surface: #fff;
+  --bg-subtle: #d9d9d91e;
+  --accent-default: #60a5fa;
+  --fg-emphasized: #404040;
+  --fg-subtle: #ededed;
+
+  border: solid 1px;
+  border-color: var(--border-emphasized);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 1px rgba(48, 49, 51, 0.05),
+    0px 1px 2px rgba(48, 49, 51, 0.1);
+  display: flex;
+  overflow: hidden;
+  padding-left: 12px;
+  height: 40px;
+  min-width: 40px;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+[data-scope="number-input"][data-part="root"]:focus-within {
+  z-index: 1;
+  --shadow: #8b5cf6;
+  box-shadow: 0 0 0 1px var(--shadow);
+  border-color: var(--accent-default);
+}
+
+.dark [data-scope="number-input"][data-part="root"]:focus-within {
+  --shadow: #ddd6fe;
+}
+
+.dark [data-scope="number-input"][data-part="root"] {
+  --border-default: #3e3e3e;
+  --border-emphasized: #262626;
+  --bg-surface: #111;
+  --bg-subtle: #3333335e;
+  --fg-emphasized: #bfbfbf;
+  --fg-subtle: #262626;
+
+  box-shadow: 0px 0px 1px #0d0d0d, 0px 1px 2px rgba(13, 13, 13, 0.9);
+}
+
+[data-scope="number-input"][data-part="control"] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: solid 1px;
+  border-color: var(--border-emphasized);
+}
+
+[data-scope="number-input"][data-part="input"] {
+  all: unset;
+  background: var(--bg-surface);
+  color: #0d0d0d;
+  outline: none;
+}
+
+.dark [data-scope="number-input"][data-part="input"] {
+  color: white;
+}
+
+[data-scope="number-input"][data-part="increment-trigger"],
+[data-scope="number-input"][data-part="decrement-trigger"] {
+  all: unset;
+  align-items: center;
+  appearance: none;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 600;
+  justify-content: center;
+  outline: none;
+  position: relative;
+  transition-property: color, background-color, border-color, outline-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  background: var(--bg-surface);
+  color: var(--fg-emphasized);
+  flex: 1;
+}
+
+[data-scope="number-input"][data-part="increment-trigger"]:hover,
+[data-scope="number-input"][data-part="decrement-trigger"]:hover {
+  background: var(--bg-subtle);
+}
+
+[data-scope="number-input"][data-part="increment-trigger"]:disabled,
+[data-scope="number-input"][data-part="decrement-trigger"]:disabled {
+  border: var(--border-default);
+  cursor: not-allowed;
+  color: var(--fg-subtle);
+}
+
+[data-scope="number-input"][data-part="increment-trigger"] {
+  border-bottom: solid 1px;
+  border-color: var(--border-emphasized);
+}

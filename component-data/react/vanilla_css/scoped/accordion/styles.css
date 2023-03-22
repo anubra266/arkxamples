@@ -1,22 +1,22 @@
 [data-scope="accordion"][data-part="root"] {
-  --border: #e7e5e4;
+  --border-default: #e7e5e4;
   display: flex;
   flex-direction: column;
   background: #fafaf9;
   padding: 24px;
   border-radius: 0.5rem;
   border: solid 1px;
-  border-color: var(--border);
+  border-color: var(--border-default);
 }
 
 .dark [data-scope="accordion"][data-part="root"] {
-  --border: #3e3e3e;
+  --border-default: #3e3e3e;
 }
 
 [data-scope="accordion"][data-part="root"] > :not([hidden]) ~ :not([hidden]) {
   border-top: solid 1px;
   border-bottom: solid 0px;
-  border-top-color: var(--border);
+  border-top-color: var(--border-default);
 }
 
 .dark [data-scope="accordion"][data-part="root"] {

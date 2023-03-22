@@ -1,12 +1,12 @@
 [data-scope="menu"][data-part="positioner"] {
   z-index: 100;
-  --border: #e7e5e4;
+  --border-default: #e7e5e4;
   --fg-emphasized: #404040;
   --bg-subtle: #d9d9d91e;
 }
 
 .dark [data-scope="menu"][data-part="positioner"] {
-  --border: #3e3e3e;
+  --border-default: #3e3e3e;
   --fg-emphasized: #c1c1c1;
   --bg-subtle: #3333335e;
 }
@@ -15,7 +15,7 @@
   /* In some browsers, hr has borders on all sides by default, we only want a bottom border */
   border: none;
   border-bottom: solid 1px;
-  border-color: var(--border);
+  border-color: var(--border-default);
   margin-block: 4px;
 }
 
@@ -26,7 +26,7 @@
   padding-block: 2px;
   min-width: 15rem;
   border: solid 1px;
-  border-color: var(--border);
+  border-color: var(--border-default);
   border-radius: 0.5rem;
   box-shadow: 0px 0px 1px rgba(48, 49, 51, 0.05),
     0px 8px 16px rgba(48, 49, 51, 0.1);
@@ -87,10 +87,6 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-
-  --fg-emphasized: #404040;
-  --fg-default: #0d0d0d;
-  --bg-subtle: #d9d9d9;
 }
 
 .button_primary {

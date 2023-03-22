@@ -7,6 +7,7 @@ export const components = [
   { id: "dialog", label: "Dialog" },
   { id: "hover-card", label: "Hover Card" },
   { id: "menu", label: "Menu" },
+  { id: "number-input", label: "Number Input" },
   //
 ] as const;
 
