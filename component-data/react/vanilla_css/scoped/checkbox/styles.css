@@ -68,10 +68,6 @@
   color: var(--accent-default);
 }
 
-/* [data-scope="checkbox"][data-part="control"][data-indeterminate]:hover {
-  border-color: var(--accent-default);
-} */
-
 /* You don't need this, just here to move the child checkboxes to the right */
 [data-scope="checkbox"][data-part="root"] ~ div:not([data-scope="checkbox"]) {
   margin-left: 12px;

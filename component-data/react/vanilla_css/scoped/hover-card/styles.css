@@ -32,8 +32,6 @@
   border-color: var(--border);
 }
 
-/* container styles */
-
 .avatar {
   border-radius: 9999px;
   position: relative;
@@ -143,6 +141,14 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+
+  --fg-default: #0d0d0d;
+  --bg-subtle: #d9d9d9;
+}
+
+.dark .button {
+  --fg-default: white;
+  --bg-subtle: #262626;
 }
 
 .button_size__xs {

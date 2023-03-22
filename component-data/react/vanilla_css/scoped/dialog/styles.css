@@ -49,8 +49,6 @@
   color: #8c8c8c;
 }
 
-/* container styles */
-
 .stack {
   display: flex;
   flex-direction: column;
@@ -64,8 +62,6 @@
 .header {
   gap: 4px;
 }
-
-/* button styles */
 
 .button {
   all: unset;

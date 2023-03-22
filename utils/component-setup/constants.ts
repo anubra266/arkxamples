@@ -6,6 +6,7 @@ export const components = [
   { id: "checkbox", label: "Checkbox" },
   { id: "dialog", label: "Dialog" },
   { id: "hover-card", label: "Hover Card" },
+  { id: "menu", label: "Menu" },
   //
 ] as const;
 
