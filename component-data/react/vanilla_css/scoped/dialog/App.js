@@ -17,7 +17,9 @@ export default function Page() {
   return (
     <Dialog>
       <DialogTrigger>
-        <button className="action primary">Open dialog</button>
+        <button className="button button_primary button_size__md">
+          Open dialog
+        </button>
       </DialogTrigger>
       <Portal>
         <DialogBackdrop />
@@ -30,16 +32,19 @@ export default function Page() {
               </div>
               <div className="stack actions">
                 <DialogCloseTrigger>
-                  <button className="action cancel secondary">Cancel</button>
+                  <button className="button button_secondary button_size__md w_full">
+                    Cancel
+                  </button>
                 </DialogCloseTrigger>
-                <button className="action confirm primary">Confirm</button>
+                <button className="button button_primary button_size__md w_full">
+                  Confirm
+                </button>
               </div>
             </div>
             <DialogCloseTrigger>
               <button
-                variant="tertiary"
                 aria-label="Close dialog"
-                className="action close_button"
+                className="button button_tertiary button_size__md close_button"
               >
                 <FiX />
               </button>

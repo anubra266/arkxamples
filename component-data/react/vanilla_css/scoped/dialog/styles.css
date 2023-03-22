@@ -67,7 +67,7 @@
 
 /* button styles */
 
-.action {
+.button {
   all: unset;
   align-items: center;
   appearance: none;
@@ -87,25 +87,26 @@
   vertical-align: middle;
   white-space: nowrap;
 
-  height: 40px;
-  min-width: 40px;
-  padding-inline: 16px;
-  line-height: 1.25rem;
-  font-size: 0.875rem;
-
   --fg-emphasized: #404040;
   --fg-default: #0d0d0d;
   --bg-subtle: #d9d9d9;
 }
 
-.dark .action {
+.dark .button {
   --fg-emphasized: #bfbfbf;
   --fg-default: white;
   --bg-subtle: #262626;
 }
 
-.confirm,
-.cancel {
+.button_size__md {
+  height: 40px;
+  min-width: 40px;
+  padding-inline: 16px;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.w_full {
   width: 100%;
 }
 
@@ -115,62 +116,26 @@
   width: 100%;
 }
 
-.close_button {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #8c8c8c;
-  padding-inline: 0px;
-  background: transparent;
-  color: var(--fg-emphasized);
-}
-
-.close_button:focus {
-  z-index: 1;
-  --shadow: #d9d9d9;
-  box-shadow: 0 0 0 4px var(--shadow);
-}
-
-.dark .close_button:focus {
-  --shadow: #262626;
-}
-
-.close_button:hover {
-  color: var(--fg-default);
-  background: var(--bg-subtle);
-}
-
-.dark .close_button {
-  color: #737373;
-}
-
-.close_button svg {
-  font-size: 1.25rem;
-  display: inline-flex;
-  align-self: center;
-  flex-shrink: 0;
-}
-
-.primary {
+.button_primary {
   color: white;
   background-color: #60a5fa;
 }
 
-.primary:hover {
+.button_primary:hover {
   background-color: #3b82f6;
 }
 
-.primary:focus {
+.button_primary:focus {
   z-index: 1;
   --shadow: #eff6ff;
   box-shadow: 0 0 0 4px var(--shadow);
 }
 
-.dark .primary:focus {
+.dark .button_primary:focus {
   --shadow: #404040;
 }
 
-.secondary {
+.button_secondary {
   border-width: 1px;
   background: white;
   border-color: #a6a6a6;
@@ -179,27 +144,66 @@
     0px 1px 2px rgba(48, 49, 51, 0.1);
 }
 
-.secondary:hover {
+.button_secondary:hover {
   color: var(--fg-default);
   background: var(--bg-subtle);
 }
 
-.secondary:focus {
+.button_secondary:focus {
   z-index: 1;
   --shadow: #d9d9d9;
   box-shadow: 0 0 0 4px var(--shadow);
 }
 
-.dark .secondary {
+.dark .button_secondary {
   background: #191919;
   border-color: #262626;
   color: #bfbfbf;
 }
 
-.dark .secondary:not(:focus) {
+.dark .button_secondary:not(:focus) {
   box-shadow: 0px 0px 1px #0d0d0d, 0px 1px 2px rgba(13, 13, 13, 0.9);
 }
 
-.dark .secondary:focus {
+.dark .button_secondary:focus {
   --shadow: #262626;
+}
+
+.button_tertiary {
+  padding-inline: 0px;
+  background: transparent;
+  color: var(--fg-emphasized);
+}
+
+.button_tertiary:focus {
+  z-index: 1;
+  --shadow: #d9d9d9;
+  box-shadow: 0 0 0 4px var(--shadow);
+}
+
+.dark .button_tertiary:focus {
+  --shadow: #262626;
+}
+
+.button_tertiary:hover {
+  color: var(--fg-default);
+  background: var(--bg-subtle);
+}
+
+.dark .button_tertiary {
+  color: #737373;
+}
+
+.close_button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #8c8c8c;
+}
+
+.close_button svg {
+  font-size: 1.25rem;
+  display: inline-flex;
+  align-self: center;
+  flex-shrink: 0;
 }

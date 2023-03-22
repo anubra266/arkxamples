@@ -21,7 +21,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Combobox     | ⚪    | ⚪  | ⚪    |
 | Editable     | ⚪    | ⚪  | ⚪    |
 | Environment  | 🌚    | 🌚  | 🌚    |
-| Hover Card   | ⚪    | ⚪  | ⚪    |
+| Hover Card   | 🟢    | ⚪  | ⚪    |
 | Menu         | ⚪    | ⚪  | ⚪    |
 | Number Input | ⚪    | ⚪  | ⚪    |
 | Pagination   | ⚪    | ⚪  | ⚪    |
