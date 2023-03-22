@@ -3,8 +3,9 @@
 import { SandpackLayout, SandpackProvider } from "@codesandbox/sandpack-react";
 import { PropsWithChildren } from "react";
 
-import { arkPackage, templates, useComponentSetup } from "utils/componentsData";
+import { arkPackage, templates } from "utils/component-setup/constants";
 import { useComponentConfig } from "utils/useComponentConfig";
+import { useComponentSetup } from "utils/useComponentSetup";
 
 const ComponentLayout = (
   props: PropsWithChildren & { params: Record<string, string> }

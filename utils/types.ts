@@ -4,7 +4,8 @@ import {
   StyleType,
   defaultConfig,
 } from "utils/component-config/constants";
-import { components, getComponent } from "utils/componentsData";
+import { getComponent } from "utils/component-setup";
+import { components } from "utils/component-setup/constants";
 
 export type ComponentId = (typeof components)[number]["id"];
 

@@ -6,8 +6,8 @@ import { CopyCodeButton } from "components/CopyCodeButton";
 import { FormatCodeButton } from "components/FormatCodeButton";
 import { OpenInCodesandboxButton } from "components/OpenInCodesandboxButton";
 
-import { useComponentSetup } from "utils/componentsData";
 import { ComponentId } from "utils/types";
+import { useComponentSetup } from "utils/useComponentSetup";
 
 type EditorTabsProps = {
   componentId: ComponentId;

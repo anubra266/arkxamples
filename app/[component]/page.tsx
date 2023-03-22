@@ -15,7 +15,7 @@ import { ComponentControls } from "components/ComponentControls";
 import { EditorTabs } from "components/EditorTabs";
 import { Navbar } from "components/Navbar";
 
-import { getComponent } from "utils/componentsData";
+import { getComponent } from "utils/component-setup";
 import { ComponentParams } from "utils/types";
 import { useSyncSandboxColorMode } from "utils/useSyncSandboxColorMode";
 

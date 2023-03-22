@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { components } from "utils/componentsData";
+import { components } from "utils/component-setup/constants";
 
 export const useComponentsSearch = () => {
   const [query, setQuery] = useState("");
