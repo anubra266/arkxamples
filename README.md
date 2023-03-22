@@ -20,7 +20,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Dialog       | 🟢    | ⚪  | ⚪    |
 | Combobox     | ⚪    | ⚪  | ⚪    |
 | Editable     | ⚪    | ⚪  | ⚪    |
-| Environment  | ⚪    | ⚪  | ⚪    |
+| Environment  | 🌚    | 🌚  | 🌚    |
 | Hover Card   | ⚪    | ⚪  | ⚪    |
 | Menu         | ⚪    | ⚪  | ⚪    |
 | Number Input | ⚪    | ⚪  | ⚪    |
@@ -49,7 +49,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Dialog       | ⚪    | ⚪  | ⚪    |
 | Combobox     | ⚪    | ⚪  | ⚪    |
 | Editable     | ⚪    | ⚪  | ⚪    |
-| Environment  | ⚪    | ⚪  | ⚪    |
+| Environment  | 🌚    | 🌚  | 🌚    |
 | Hover Card   | ⚪    | ⚪  | ⚪    |
 | Menu         | ⚪    | ⚪  | ⚪    |
 | Number Input | ⚪    | ⚪  | ⚪    |
@@ -78,7 +78,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Dialog       | ⚪    | ⚪  | ⚪    |     | Dialog       | ⚪    | ⚪  | ⚪    |
 | Combobox     | ⚪    | ⚪  | ⚪    |     | Combobox     | ⚪    | ⚪  | ⚪    |
 | Editable     | ⚪    | ⚪  | ⚪    |     | Editable     | ⚪    | ⚪  | ⚪    |
-| Environment  | ⚪    | ⚪  | ⚪    |     | Environment  | ⚪    | ⚪  | ⚪    |
+| Environment  | 🌚    | 🌚  | 🌚    |     | Environment  | 🌚    | 🌚  | 🌚    |
 | Hover Card   | ⚪    | ⚪  | ⚪    |     | Hover Card   | ⚪    | ⚪  | ⚪    |
 | Menu         | ⚪    | ⚪  | ⚪    |     | Menu         | ⚪    | ⚪  | ⚪    |
 | Number Input | ⚪    | ⚪  | ⚪    |     | Number Input | ⚪    | ⚪  | ⚪    |
