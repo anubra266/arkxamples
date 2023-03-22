@@ -4,6 +4,10 @@ Sandbox to view [Ark UI](https://github.com/chakra-ui/ark) styling examples.
 
 Built with [CSS panda](), [Sandpack](sandpack.codesandbox.io/) and ❤️
 
+## Contribution
+
+Feel free to open a PR for any of the unchecked components. The only requirement, is that it matches the **Vanila CSS** version. By match, i mean _Look like it_ 😉
+
 ## State
 
 ### Vanilla CSS
