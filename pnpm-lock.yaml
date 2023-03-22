@@ -7,6 +7,7 @@ specifiers:
   '@theme-toggles/react': ^4.1.0
   '@trivago/prettier-plugin-sort-imports': ^4.1.1
   '@types/node': 18.15.3
+  '@types/prettier': ^2.7.2
   '@types/react': 18.0.28
   '@types/react-dom': ^18.0.11
   eslint: 8.36.0
@@ -32,6 +33,7 @@ devDependencies:
   '@theme-toggles/react': 4.1.0_biqbaboplfbrettd7655fr4n2y
   '@trivago/prettier-plugin-sort-imports': 4.1.1_prettier@2.8.5
   '@types/node': 18.15.3
+  '@types/prettier': 2.7.2
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   eslint: 8.36.0
@@ -1631,6 +1633,10 @@ packages:
 
   /@types/parse5/6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
+    dev: true
+
+  /@types/prettier/2.7.2:
+    resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
     dev: true
 
   /@types/prop-types/15.7.5:

@@ -21,7 +21,7 @@ export const globalCss = defineGlobalStyles({
   "html, body": {
     display: "flex",
     flexDirection: "column",
-    height: "unset !important", // TODO possbile issue in panda
+    height: "unset !important",
   },
   "*, *::before, *::after": {
     borderColor: "border.default",

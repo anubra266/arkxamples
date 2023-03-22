@@ -1,0 +1,66 @@
+[data-scope="accordion"][data-part="root"] {
+  display: flex;
+  flex-direction: column;
+  background: #fafaf9;
+  padding: 24px;
+  border-radius: 0.5rem;
+  border: solid 1px;
+  --border: #e7e5e4;
+  border-color: var(--border);
+}
+
+.dark [data-scope="accordion"][data-part="root"] {
+  --border: #3e3e3e;
+}
+
+[data-scope="accordion"][data-part="root"] > :not([hidden]) ~ :not([hidden]) {
+  border-top: solid 1px;
+  border-bottom: solid 0px;
+  border-top-color: var(--border);
+}
+
+.dark [data-scope="accordion"][data-part="root"] {
+  background: #1b1a1a;
+}
+
+[data-scope="accordion"][data-part="trigger"] {
+  all: unset;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  justify-content: space-between;
+  padding: 0;
+  padding-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 100%;
+  color: #0d0d0d;
+}
+
+[data-scope="accordion"][data-part="trigger"]:not([data-expanded]) {
+  padding-bottom: 8px;
+}
+
+.dark [data-scope="accordion"][data-part="trigger"] {
+  color: white;
+}
+
+[data-scope="accordion"][data-part="item"]:not([hidden])
+  ~ :not([hidden])
+  > [data-part="trigger"] {
+  padding-top: 16px;
+}
+
+[data-scope="accordion"][data-part="content"] {
+  padding-bottom: 16px;
+  padding-right: 48px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #737373;
+}
+.dark [data-scope="accordion"][data-part="content"] {
+  color: #8c8c8c;
+}
