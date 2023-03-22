@@ -1,3 +1,4 @@
 module.exports = {
-  plugins: ["@pandacss/dev/postcss"],
+  plugins: [],
+  // plugins: ["@pandacss/dev/postcss"],
 };

@@ -63,11 +63,11 @@ export const LinkBox = forwardRef<HTMLDivElement, LinkBoxProps>(
     return (
       <panda.div
         ref={ref}
-        position="relative"
         {...rest}
         className={cx(
           className,
           css({
+            position: "relative",
             /* Elevate the links and abbreviations up */
             "& a[href]:not(.linkbox__overlay), & abbr[title]": {
               position: "relative",

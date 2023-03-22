@@ -20,7 +20,7 @@ export enum StyleType {
 
 export const FRAMEWORKS = {
   [Framework.REACT]: { label: "React", value: Framework.REACT },
-  [Framework.SOLID]: { label: "Solid JS", value: Framework.SOLID },
+  // [Framework.SOLID]: { label: "Solid JS", value: Framework.SOLID },
   // [Framework.VUE_JSX]: { label: "Vue JSX", value: Framework.VUE_JSX },
   // [Framework.VUE_SFC]: { label: "Vue SFC", value: Framework.VUE_SFC },
 };

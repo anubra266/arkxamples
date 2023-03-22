@@ -1,76 +1,78 @@
 [data-scope="checkbox"][data-part="root"] {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: fit-content;
+  gap: 8px;
+  --accent-default: #60a5fa;
+  /* You don't need this */
+  margin-top: 12px;
 }
 
 [data-scope="checkbox"][data-part="label"] {
-  color: grey;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 [data-scope="checkbox"][data-part="control"] {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  height: 25px;
-  width: 25px;
-  background-color: #050505;
-  border: solid 2px #9ca3af33;
-  border-radius: 4px;
+  align-items: center;
+  background: #fafaf9;
+  border-color: #d7d3d0;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
 }
+
+.dark [data-scope="checkbox"][data-part="control"] {
+  background: #141313;
+  border-color: #3e3e3e;
+}
+
 [data-scope="checkbox"][data-part="control"][data-focus] {
-  outline: 2px solid royalblue;
+  --shadow: #ede9fe;
+  box-shadow: 0 0 0 4px var(--shadow);
+}
+
+.dark [data-scope="checkbox"][data-part="control"][data-focus] {
+  --shadow: #292524;
 }
 
 [data-scope="checkbox"][data-part="control"][data-hover] {
-  background-color: #9ca3af33;
+  border-color: #a9a29d;
+}
+
+.dark [data-scope="checkbox"][data-part="control"][data-hover] {
+  border-color: #44403c;
 }
 
 [data-scope="checkbox"][data-part="control"][data-checked] {
-  background-color: #2196f3;
-  border-color: #2196f3;
+  background-color: var(--accent-default);
+  border-color: var(--accent-default);
+  color: white;
 }
 
-[data-scope="checkbox"][data-part="control"][data-checked]::after {
-  display: block;
+.dark [data-scope="checkbox"][data-part="control"][data-checked] {
+  color: black;
 }
 
-[data-scope="checkbox"][data-part="control"]::after {
-  content: "";
-  position: absolute;
-  display: none;
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+[data-scope="checkbox"][data-part="control"][data-checked]:hover {
+  background-color: var(--accent-default);
 }
 
 [data-scope="checkbox"][data-part="control"][data-indeterminate] {
-  background-color: white;
-  border-color: gray;
+  border-color: var(--accent-default);
+  color: var(--accent-default);
 }
 
-[data-scope="checkbox"][data-part="control"][data-indeterminate]::after {
-  display: block;
-  left: 50%;
-  top: 50%;
-  width: 13px;
-  height: 3px;
-  border: none;
-  background-color: grey;
-  transform: translate(-50%, -50%);
+/* [data-scope="checkbox"][data-part="control"][data-indeterminate]:hover {
+  border-color: var(--accent-default);
+} */
+
+/* You don't need this, just here to move the child checkboxes to the right */
+[data-scope="checkbox"][data-part="root"] ~ div:not([data-scope="checkbox"]) {
+  margin-left: 12px;
 }

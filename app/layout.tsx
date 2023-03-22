@@ -5,9 +5,10 @@ import { getSandpackCssText } from "@codesandbox/sandpack-react";
 import { Fira_Code, Inter } from "next/font/google";
 import type { PropsWithChildren } from "react";
 
-import { ColorModeScript } from "components/ColorModeScript";
+// import "../index.css";
+import "design-system/styles.css";
 
-import "../index.css";
+import { ColorModeScript } from "components/ColorModeScript";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const firaCode = Fira_Code({
