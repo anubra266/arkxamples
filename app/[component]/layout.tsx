@@ -17,7 +17,6 @@ const ComponentLayout = (
   const componentDetails = useComponentSetup(componentId as any);
 
   return (
-    // Multiple themes suck right now https://github.com/codesandbox/sandpack/issues/849
     <SandpackProvider
       template={templates[framework]}
       options={{
@@ -29,6 +28,7 @@ const ComponentLayout = (
         },
       }}
       files={componentDetails.files}
+      // Multiple themes suck right now https://github.com/codesandbox/sandpack/issues/849
       // ! Only dark mode for now. It's messing with the page
       theme="dark"
     >

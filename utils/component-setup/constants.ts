@@ -4,6 +4,7 @@ export const components = [
   //
   { id: "accordion", label: "Accordion" },
   { id: "checkbox", label: "Checkbox" },
+  { id: "dialog", label: "Dialog" },
   //
 ] as const;
 

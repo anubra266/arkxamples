@@ -20,4 +20,13 @@ body {
 body.dark {
   background-color: #111;
   color: white;
+  color-scheme: dark;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  max-width: unset;
 }

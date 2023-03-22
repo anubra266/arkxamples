@@ -17,7 +17,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Accordion    | 🟢    | ⚪  | ⚪    |
 | Carousel     | ⚪    | ⚪  | ⚪    |
 | Checkbox     | 🟢    | ⚪  | ⚪    |
-| Dialog       | ⚪    | ⚪  | ⚪    |
+| Dialog       | 🟢    | ⚪  | ⚪    |
 | Combobox     | ⚪    | ⚪  | ⚪    |
 | Editable     | ⚪    | ⚪  | ⚪    |
 | Environment  | ⚪    | ⚪  | ⚪    |
