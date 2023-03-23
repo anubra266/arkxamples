@@ -28,7 +28,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Popover      | 🟢    | ⚪  | ⚪    |
 | Radio Group  | 🟢    | ⚪  | ⚪    |
 | Range Slider | 🟢    | ⚪  | ⚪    |
-| Rating       | ⚪    | ⚪  | ⚪    |
+| Rating       | 🟢    | ⚪  | ⚪    |
 | Select       | ⚪    | ⚪  | ⚪    |
 | Slider       | 🟢    | ⚪  | ⚪    |
 | Splitter     | ⚪    | ⚪  | ⚪    |

@@ -13,6 +13,7 @@ export const components = [
   { id: "popover", label: "Popover" },
   { id: "radio-group", label: "Radio Group" },
   { id: "range-slider", label: "Range Slider" },
+  { id: "rating-group", label: "Rating Group" },
 
   { id: "slider", label: "Slider" },
   //

@@ -1,0 +1,34 @@
+[data-scope="rating-group"][data-part="control"] {
+  display: flex;
+  gap: 2px;
+}
+
+[data-scope="rating-group"][data-part="rating"] {
+  cursor: pointer;
+  color: #a6a6a6;
+  fill: #a6a6a6;
+  transition-property: color, fill;
+  transition-duration: 50ms;
+  --stop-color-active: #a78bfa;
+  --stop-color-inactive: #a6a6a6;
+}
+
+.dark [data-scope="rating-group"][data-part="rating"] {
+  color: #262626;
+  fill: #262626;
+  --stop-color-inactive: #262626;
+}
+
+[data-scope="rating-group"][data-part="rating"][data-focus] {
+  outline: none;
+}
+
+[data-scope="rating-group"][data-part="rating"] svg {
+  width: 40px;
+  height: 40px;
+}
+
+[data-scope="rating-group"][data-part="rating"][data-highlighted] {
+  color: #a78bfa;
+  fill: #a78bfa;
+}
