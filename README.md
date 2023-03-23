@@ -27,10 +27,10 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Pin Input    | 🟢    | ⚪  | ⚪    |
 | Popover      | 🟢    | ⚪  | ⚪    |
 | Radio Group  | 🟢    | ⚪  | ⚪    |
-| Range Slider | ⚪    | ⚪  | ⚪    |
+| Range Slider | 🟢    | ⚪  | ⚪    |
 | Rating       | ⚪    | ⚪  | ⚪    |
 | Select       | ⚪    | ⚪  | ⚪    |
-| Slider       | ⚪    | ⚪  | ⚪    |
+| Slider       | 🟢    | ⚪  | ⚪    |
 | Splitter     | ⚪    | ⚪  | ⚪    |
 | Tabs         | ⚪    | ⚪  | ⚪    |
 | Tags Input   | ⚪    | ⚪  | ⚪    |
