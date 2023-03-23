@@ -31,7 +31,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Rating       | 🟢    | ⚪  | ⚪    |
 | Select       | 🟢    | ⚪  | ⚪    |
 | Slider       | 🟢    | ⚪  | ⚪    |
-| Splitter     | ⚪    | ⚪  | ⚪    |
+| Splitter     | 🟢    | ⚪  | ⚪    |
 | Tabs         | ⚪    | ⚪  | ⚪    |
 | Tags Input   | ⚪    | ⚪  | ⚪    |
 | Toast        | ⚪    | ⚪  | ⚪    |
