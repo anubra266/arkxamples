@@ -169,6 +169,7 @@
   gap: 12px;
 }
 
-.active {
+.active,
+.dark .active {
   color: #a78bfa;
 }
