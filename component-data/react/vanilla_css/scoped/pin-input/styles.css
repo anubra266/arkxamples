@@ -29,6 +29,16 @@
   text-align: center;
 }
 
+[data-scope="pin-input"][data-part="input"]:focus {
+  z-index: 1;
+  box-shadow: 0 0 0 1px #8b5cf6;
+  border-color: #60a5fa;
+}
+
+.dark [data-scope="pin-input"][data-part="input"]:focus {
+  box-shadow: 0 0 0 1px #ddd6fe;
+}
+
 .dark [data-scope="pin-input"][data-part="input"] {
   color: white;
 }

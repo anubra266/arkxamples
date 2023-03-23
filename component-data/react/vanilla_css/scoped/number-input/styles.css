@@ -24,13 +24,12 @@
 
 [data-scope="number-input"][data-part="root"]:focus-within {
   z-index: 1;
-  --shadow: #8b5cf6;
-  box-shadow: 0 0 0 1px var(--shadow);
+  box-shadow: 0 0 0 1px #8b5cf6;
   border-color: var(--accent-default);
 }
 
 .dark [data-scope="number-input"][data-part="root"]:focus-within {
-  --shadow: #ddd6fe;
+  box-shadow: 0 0 0 1px #ddd6fe;
 }
 
 .dark [data-scope="number-input"][data-part="root"] {
