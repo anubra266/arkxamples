@@ -1,7 +1,6 @@
 .container {
   height: 40rem;
   width: 40rem;
-  max-width: calc(100vw - 4rem);
 }
 
 .content {

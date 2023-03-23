@@ -17,6 +17,10 @@ export const components = [
   { id: "select", label: "Select" },
   { id: "slider", label: "Slider" },
   { id: "splitter", label: "Splitter" },
+  { id: "tabs", label: "Tabs" },
+  // { id: "tags-input", label: "Tags Input" },
+  // { id: "toast", label: "Toast" },
+  // { id: "tooltip", label: "Tooltip" },
   //
 ] as const;
 

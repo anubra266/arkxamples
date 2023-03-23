@@ -6,6 +6,10 @@
   padding: 2rem;
 }
 
+#root > *:first-child {
+  max-width: calc(100vw - 4rem);
+}
+
 body {
   margin: 0;
   display: flex;

@@ -32,7 +32,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Select       | 🟢    | ⚪  | ⚪    |
 | Slider       | 🟢    | ⚪  | ⚪    |
 | Splitter     | 🟢    | ⚪  | ⚪    |
-| Tabs         | ⚪    | ⚪  | ⚪    |
+| Tabs         | 🟢    | ⚪  | ⚪    |
 | Tags Input   | ⚪    | ⚪  | ⚪    |
 | Toast        | ⚪    | ⚪  | ⚪    |
 | Tooltip      | ⚪    | ⚪  | ⚪    |
