@@ -20,15 +20,13 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Dialog       | 🟢    | ⚪  | ⚪    |
 | Combobox     | ⚪    | ⚪  | ⚪    |
 | Editable     | ⚪    | ⚪  | ⚪    |
-| Environment  | 🌚    | 🌚  | 🌚    |
 | Hover Card   | 🟢    | ⚪  | ⚪    |
 | Menu         | 🟢    | ⚪  | ⚪    |
 | Number Input | 🟢    | ⚪  | ⚪    |
 | Pagination   | 🟢    | ⚪  | ⚪    |
 | Pin Input    | 🟢    | ⚪  | ⚪    |
 | Popover      | 🟢    | ⚪  | ⚪    |
-| Pressable    | ⚪    | ⚪  | ⚪    |
-| Radio Group  | ⚪    | ⚪  | ⚪    |
+| Radio Group  | 🟢    | ⚪  | ⚪    |
 | Range Slider | ⚪    | ⚪  | ⚪    |
 | Rating       | ⚪    | ⚪  | ⚪    |
 | Select       | ⚪    | ⚪  | ⚪    |
@@ -49,14 +47,12 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Dialog       | ⚪    | ⚪  | ⚪    |
 | Combobox     | ⚪    | ⚪  | ⚪    |
 | Editable     | ⚪    | ⚪  | ⚪    |
-| Environment  | 🌚    | 🌚  | 🌚    |
 | Hover Card   | ⚪    | ⚪  | ⚪    |
 | Menu         | ⚪    | ⚪  | ⚪    |
 | Number Input | ⚪    | ⚪  | ⚪    |
 | Pagination   | ⚪    | ⚪  | ⚪    |
 | Pin Input    | ⚪    | ⚪  | ⚪    |
 | Popover      | ⚪    | ⚪  | ⚪    |
-| Pressable    | ⚪    | ⚪  | ⚪    |
 | Radio Group  | ⚪    | ⚪  | ⚪    |
 | Range Slider | ⚪    | ⚪  | ⚪    |
 | Rating       | ⚪    | ⚪  | ⚪    |
@@ -78,14 +74,12 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Dialog       | ⚪    | ⚪  | ⚪    |     | Dialog       | ⚪    | ⚪  | ⚪    |
 | Combobox     | ⚪    | ⚪  | ⚪    |     | Combobox     | ⚪    | ⚪  | ⚪    |
 | Editable     | ⚪    | ⚪  | ⚪    |     | Editable     | ⚪    | ⚪  | ⚪    |
-| Environment  | 🌚    | 🌚  | 🌚    |     | Environment  | 🌚    | 🌚  | 🌚    |
 | Hover Card   | ⚪    | ⚪  | ⚪    |     | Hover Card   | ⚪    | ⚪  | ⚪    |
 | Menu         | ⚪    | ⚪  | ⚪    |     | Menu         | ⚪    | ⚪  | ⚪    |
 | Number Input | ⚪    | ⚪  | ⚪    |     | Number Input | ⚪    | ⚪  | ⚪    |
 | Pagination   | ⚪    | ⚪  | ⚪    |     | Pagination   | ⚪    | ⚪  | ⚪    |
 | Pin Input    | ⚪    | ⚪  | ⚪    |     | Pin Input    | ⚪    | ⚪  | ⚪    |
 | Popover      | ⚪    | ⚪  | ⚪    |     | Popover      | ⚪    | ⚪  | ⚪    |
-| Pressable    | ⚪    | ⚪  | ⚪    |     | Pressable    | ⚪    | ⚪  | ⚪    |
 | Radio Group  | ⚪    | ⚪  | ⚪    |     | Radio Group  | ⚪    | ⚪  | ⚪    |
 | Range Slider | ⚪    | ⚪  | ⚪    |     | Range Slider | ⚪    | ⚪  | ⚪    |
 | Rating       | ⚪    | ⚪  | ⚪    |     | Rating       | ⚪    | ⚪  | ⚪    |

@@ -155,7 +155,7 @@ export function Navigation(props: ComponentControlsProps) {
                       <b>invention</b> of yours? 🧐
                     </panda.span>
                   ) : null}
-                  <Stack w="full" gap="3">
+                  <Stack w="full" gap="3" maxHeight="sm" overflow="auto">
                     {filteredComponents.map((comp) => (
                       <LinkBox
                         key={comp.id}

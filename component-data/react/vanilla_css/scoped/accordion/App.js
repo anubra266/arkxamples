@@ -8,9 +8,9 @@ import { FiChevronDown } from "react-icons/fi";
 
 import "./styles.css";
 
-export default function Page() {
-  const items = ["React", "Solid", "Vue"];
+const items = ["React", "Solid", "Vue"];
 
+export default function Page() {
   return (
     <Accordion defaultValue="React">
       {items.map((item, id) => (

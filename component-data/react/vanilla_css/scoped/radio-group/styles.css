@@ -1,0 +1,69 @@
+[data-scope="radio-group"][data-part="root"] {
+  --bg-surface: #fafaf9;
+  --border-emphasized: #a6a6a6;
+
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dark [data-scope="radio-group"][data-part="root"] {
+  --bg-surface: #111;
+  --border-emphasized: #262626;
+}
+
+[data-scope="radio-group"][data-part="radio"] {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+}
+
+[data-scope="radio-group"][data-part="radio-control"] {
+  height: 20px;
+  width: 20px;
+  border: solid 1px var(--border-emphasized);
+  border-radius: 9999px;
+  background: var(--bg-surface);
+}
+
+[data-peer]:focus ~ [data-scope="radio-group"][data-part="radio-control"] {
+  box-shadow: 0 0 0 4px #ede9fe;
+}
+
+.dark
+  [data-peer]:focus
+  ~ [data-scope="radio-group"][data-part="radio-control"] {
+  box-shadow: 0 0 0 4px #262626;
+}
+
+[data-scope="radio-group"][data-part="radio-control"]:hover {
+  border-color: #8c8c8c;
+}
+
+.dark [data-scope="radio-group"][data-part="radio-control"]:hover {
+  border-color: #404040;
+}
+
+[data-scope="radio-group"][data-part="radio-control"][data-checked] {
+  background: #a78bfa;
+  border-color: #a78bfa;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -4px;
+  outline-color: white;
+}
+
+.dark [data-scope="radio-group"][data-part="radio-control"][data-checked] {
+  outline-color: #0d0d0d;
+}
+
+[data-scope="radio-group"][data-part="radio-label"] {
+  font-weight: 500;
+  color: #404040;
+}
+
+.dark [data-scope="radio-group"][data-part="radio-label"] {
+  color: #bfbfbf;
+}
