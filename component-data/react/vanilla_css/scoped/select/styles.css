@@ -1,0 +1,93 @@
+[data-scope="select"][data-part="trigger"] {
+  all: unset;
+
+  padding: 0 0.75rem;
+  height: 40px;
+  width: 20rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  appearance: none;
+  transition-property: color, background-color, border-color, opacity,
+    box-shadow;
+  transition-duration: 100ms;
+
+  border-radius: 0.5rem;
+  border: solid 1px #e7e5e4;
+  background-color: #fafaf9;
+  text-align: left;
+
+  color: #0d0d0d;
+}
+
+.dark [data-scope="select"][data-part="trigger"] {
+  border-color: #3e3e3e;
+  background-color: #111;
+  color: white;
+}
+
+[data-scope="select"][data-part="trigger"]:focus {
+  z-index: 1;
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 4px #eff6ff;
+}
+
+.dark [data-scope="select"][data-part="trigger"]:focus {
+  box-shadow: 0 0 0 4px #404040;
+}
+
+[data-scope="select"][data-part="trigger"]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+[data-scope="select"][data-part="content"] {
+  background-color: #fafaf9;
+  border-radius: 0.5rem;
+  max-width: calc(100vw - 1rem);
+  /*   Width of trigger + inline-padding of trigger */
+  width: 20.75rem;
+  padding: 4px;
+  list-style: none;
+  border: solid 1px #e7e5e4;
+  box-shadow: 0px 0px 1px rgba(48, 49, 51, 0.05),
+    0px 8px 16px rgba(48, 49, 51, 0.1);
+}
+
+.dark [data-scope="select"][data-part="content"] {
+  background-color: #111;
+  border-color: #3e3e3e;
+  box-shadow: 0px 0px 1px #0d0d0d, 0px 8px 16px rgba(13, 13, 13, 0.9);
+}
+
+[data-scope="select"][data-part="option"] {
+  padding: 8px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+[data-scope="select"][data-part="option"]:hover,
+[data-scope="select"][data-part="option"][data-selected],
+[data-scope="select"][data-part="option"][data-selefocuscted] {
+  background: #d9d9d9;
+}
+
+.dark [data-scope="select"][data-part="option"]:hover,
+.dark [data-scope="select"][data-part="option"][data-selected],
+.dark [data-scope="select"][data-part="option"][data-selefocuscted] {
+  background: #262626;
+}
+
+[data-scope="select"][data-part="option"]:last-child {
+  margin-bottom: 0;
+}

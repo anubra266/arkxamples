@@ -14,7 +14,7 @@ export const components = [
   { id: "radio-group", label: "Radio Group" },
   { id: "range-slider", label: "Range Slider" },
   { id: "rating-group", label: "Rating Group" },
-
+  { id: "select", label: "Select" },
   { id: "slider", label: "Slider" },
   //
 ] as const;

@@ -29,7 +29,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Radio Group  | 🟢    | ⚪  | ⚪    |
 | Range Slider | 🟢    | ⚪  | ⚪    |
 | Rating       | 🟢    | ⚪  | ⚪    |
-| Select       | ⚪    | ⚪  | ⚪    |
+| Select       | 🟢    | ⚪  | ⚪    |
 | Slider       | 🟢    | ⚪  | ⚪    |
 | Splitter     | ⚪    | ⚪  | ⚪    |
 | Tabs         | ⚪    | ⚪  | ⚪    |
@@ -64,7 +64,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Toast        | ⚪    | ⚪  | ⚪    |
 | Tooltip      | ⚪    | ⚪  | ⚪    |
 
-### CSS Panda
+<!-- ### CSS Panda
 
 | CSS FUNCTION | React | Vue | Solid |     | RECIPE       | React | Vue | Solid |
 | ------------ | ----- | --- | ----- | --- | ------------ | ----- | --- | ----- |
@@ -89,4 +89,4 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Tabs         | ⚪    | ⚪  | ⚪    |     | Tabs         | ⚪    | ⚪  | ⚪    |
 | Tags Input   | ⚪    | ⚪  | ⚪    |     | Tags Input   | ⚪    | ⚪  | ⚪    |
 | Toast        | ⚪    | ⚪  | ⚪    |     | Toast        | ⚪    | ⚪  | ⚪    |
-| Tooltip      | ⚪    | ⚪  | ⚪    |     | Tooltip      | ⚪    | ⚪  | ⚪    |
+| Tooltip      | ⚪    | ⚪  | ⚪    |     | Tooltip      | ⚪    | ⚪  | ⚪    | -->
