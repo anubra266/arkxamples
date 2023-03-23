@@ -22,6 +22,7 @@
 }
 
 [data-scope="hover-card"][data-part="arrow"] {
+  /* This variables are consumed by ark ui */
   --arrow-size: 12px;
   --arrow-background: var(--hover-card-background);
 }

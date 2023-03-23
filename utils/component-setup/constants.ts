@@ -10,6 +10,7 @@ export const components = [
   { id: "number-input", label: "Number Input" },
   { id: "pagination", label: "Pagination" },
   { id: "pin-input", label: "Pin Input" },
+  { id: "popover", label: "Popover" },
   //
 ] as const;
 
