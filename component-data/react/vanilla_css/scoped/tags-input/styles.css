@@ -1,0 +1,107 @@
+[data-scope="tags-input"][data-part="root"] {
+  width: 40rem;
+}
+
+[data-scope="tags-input"][data-part="control"] {
+  color: #0d0d0d;
+  background: #fafaf9;
+  border: solid 1px #a6a6a6;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 1px rgba(48, 49, 51, 0.05),
+    0px 1px 2px rgba(48, 49, 51, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px;
+  transition-property: color, background-color, border-color opacity, box-shadow;
+  transition-duration: 100ms;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.dark [data-scope="tags-input"][data-part="control"] {
+  color: white;
+  background: #111;
+  border-color: #3e3e3e;
+
+  box-shadow: 0px 0px 1px #0d0d0d, 0px 1px 2px rgba(13, 13, 13, 0.9);
+}
+
+[data-scope="tags-input"][data-part="control"]:focus-within {
+  z-index: 1;
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 1px #8b5cf6;
+}
+
+.dark [data-scope="tags-input"][data-part="control"]:focus-within {
+  box-shadow: 0 0 0 1px #ddd6fe;
+}
+
+[data-scope="tags-input"][data-part="input"] {
+  all: unset;
+}
+
+[data-scope="tags-input"][data-part="tag"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #a6a6a6;
+  border-radius: 0.5rem;
+  height: 24px;
+  padding-left: 10px;
+  padding-right: 4px;
+  font: inherit;
+}
+
+.dark [data-scope="tags-input"][data-part="tag"] {
+  border-color: #3e3e3e;
+}
+
+[data-scope="tags-input"][data-part="tag"][data-selected] {
+  z-index: 1;
+  border-color: #a78bfa;
+}
+
+[data-scope="tags-input"][data-part="tag"][hidden] {
+  display: none;
+}
+
+[data-scope="tags-input"][data-part="tag-input"] {
+  border: none;
+  outline: none;
+  font: inherit;
+  background: transparent;
+  padding-left: 10px;
+  /*   
+  Gap before next Tag (6) + width of delete icon (12) 
+  + margin before delete icon (4) + tag right padding (4) 
+
+  You can just put a small padding, or same as padding-left.
+  I only do this because I like the text to remain in the same 
+  position once I start editing. This choice is subjective.
+  */
+  padding-right: 25px;
+}
+
+[data-scope="tags-input"][data-part="tag-delete-trigger"] {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  height: 16px;
+  width: 16px;
+  margin-left: 4px;
+  color: #8c8c8c;
+}
+
+.dark [data-scope="tags-input"][data-part="tag-delete-trigger"] {
+  color: #737373;
+}
+
+[data-scope="tags-input"][data-part="tag-delete-trigger"] svg {
+  height: 12px;
+  width: 12px;
+}
