@@ -24,7 +24,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Hover Card   | 🟢    | ⚪  | ⚪    |
 | Menu         | 🟢    | ⚪  | ⚪    |
 | Number Input | 🟢    | ⚪  | ⚪    |
-| Pagination   | ⚪    | ⚪  | ⚪    |
+| Pagination   | 🟢    | ⚪  | ⚪    |
 | Pin Input    | ⚪    | ⚪  | ⚪    |
 | Popover      | ⚪    | ⚪  | ⚪    |
 | Pressable    | ⚪    | ⚪  | ⚪    |

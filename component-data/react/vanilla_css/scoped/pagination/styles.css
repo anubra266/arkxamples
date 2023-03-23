@@ -1,0 +1,123 @@
+[data-scope="pagination"][data-part="root"] {
+  --fg-emphasized: #404040;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.dark [data-scope="pagination"][data-part="root"] {
+  --fg-emphasized: #bfbfbf;
+}
+
+[data-scope="pagination"][data-part="list"] {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 4px;
+}
+
+[data-scope="pagination"][data-part="page-trigger"] {
+  font-variant-numeric: tabular-nums;
+}
+
+[data-scope="pagination"][data-part="ellipsis"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  min-width: 40px;
+  padding-inline: 12px;
+  color: var(--fg-emphasized);
+  font-size: 0.875rem;
+  user-select: none;
+}
+
+.button {
+  all: unset;
+  align-items: center;
+  appearance: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 500;
+  justify-content: center;
+  outline: none;
+  position: relative;
+  transition-property: color, background-color, border-color, outline-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  --fg-default: #0d0d0d;
+  --bg-subtle: #d9d9d9;
+}
+
+.dark .button {
+  --fg-default: white;
+  --bg-subtle: #262626;
+}
+
+.button_size__md {
+  height: 40px;
+  min-width: 40px;
+  padding-inline: 16px;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.button_secondary {
+  border: solid 1px;
+  background: white;
+  border-color: #a6a6a6;
+  color: #404040;
+  box-shadow: 0px 0px 1px rgba(48, 49, 51, 0.05),
+    0px 1px 2px rgba(48, 49, 51, 0.1);
+}
+
+.button_secondary:focus {
+  z-index: 1;
+  box-shadow: 0 0 0 4px #d9d9d9;
+}
+.dark .button_secondary {
+  background: #191919;
+  border-color: #262626;
+  color: #bfbfbf;
+  box-shadow: 0px 0px 1px #0d0d0d, 0px 1px 2px rgba(13, 13, 13, 0.9);
+}
+
+.dark .button_secondary:focus {
+  box-shadow: 0 0 0 4px #262626;
+}
+
+.button_secondary:hover {
+  color: var(--fg-default);
+  background: var(--bg-subtle);
+}
+
+.button_tertiary {
+  padding-inline: 0px;
+  background: transparent;
+  color: var(--fg-emphasized);
+}
+
+.button_tertiary:focus {
+  z-index: 1;
+  box-shadow: 0 0 0 4px #d9d9d9;
+}
+
+.dark .button_tertiary:focus {
+  box-shadow: 0 0 0 4px #262626;
+}
+
+.button_tertiary:hover {
+  color: var(--fg-default);
+  background: var(--bg-subtle);
+}
+
+.dark .button_tertiary {
+  color: #737373;
+}

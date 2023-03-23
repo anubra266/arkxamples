@@ -8,6 +8,7 @@ export const components = [
   { id: "hover-card", label: "Hover Card" },
   { id: "menu", label: "Menu" },
   { id: "number-input", label: "Number Input" },
+  { id: "pagination", label: "Pagination" },
   //
 ] as const;
 
