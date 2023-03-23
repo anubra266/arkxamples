@@ -35,7 +35,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Tabs         | 🟢    | ⚪  | ⚪    |
 | Tags Input   | 🟢    | ⚪  | ⚪    |
 | Toast        | 🟢    | ⚪  | ⚪    |
-| Tooltip      | ⚪    | ⚪  | ⚪    |
+| Tooltip      | 🟢    | ⚪  | ⚪    |
 
 ### Tailwind
 

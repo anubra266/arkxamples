@@ -20,7 +20,7 @@ export const components = [
   { id: "tabs", label: "Tabs" },
   { id: "tags-input", label: "Tags Input" },
   { id: "toast", label: "Toast" },
-  // { id: "tooltip", label: "Tooltip" },
+  { id: "tooltip", label: "Tooltip" },
   //
 ] as const;
 
