@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@ark-ui/react": "0.0.0-rc-20230317004640",
+    "@ark-ui/solid": "0.0.0-rc-20230317004640",
     "@codesandbox/sandpack-react": "^2.1.9",
     "@pandacss/dev": "0.0.0-dev-20230213064154",
     "@theme-toggles/react": "^4.1.0",
@@ -31,6 +32,8 @@
     "prettier": "^2.8.5",
     "raw-loader": "^4.0.2",
     "react-icons": "^4.8.0",
+    "solid-icons": "^1.0.4",
+    "solid-js": "^1.6.15",
     "typescript": "5.0.2",
     "usehooks-ts": "^2.9.1"
   }

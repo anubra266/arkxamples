@@ -3,6 +3,7 @@
 import { Splitter, SplitterPanel, SplitterResizeTrigger } from "@ark-ui/react";
 import {
   SandpackCodeEditor,
+  SandpackFileExplorer,
   SandpackPreview,
 } from "@codesandbox/sandpack-react";
 
@@ -73,7 +74,7 @@ export default function Component(props: { params: ComponentParams }) {
               showTabs={false}
               style={{ height: "100%" }}
             />
-            {/* <SandpackFileExplorer /> */}
+            <SandpackFileExplorer />
           </Flex>
         </SplitterPanel>
       </Splitter>

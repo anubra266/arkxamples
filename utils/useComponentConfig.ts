@@ -89,7 +89,9 @@ export const useComponentConfig = () => {
   const queryString = searchParams.toString();
 
   useEffect(() => {
-    setConfig(configWithParams);
+    if (queryString) {
+      setConfig(configWithParams);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [queryString]);
 

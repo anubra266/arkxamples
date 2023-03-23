@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ark-ui/react': 0.0.0-rc-20230317004640
+  '@ark-ui/solid': 0.0.0-rc-20230317004640
   '@codesandbox/sandpack-react': ^2.1.9
   '@pandacss/dev': 0.0.0-dev-20230213064154
   '@theme-toggles/react': ^4.1.0
@@ -18,6 +19,8 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   react-icons: ^4.8.0
+  solid-icons: ^1.0.4
+  solid-js: ^1.6.15
   typescript: 5.0.2
   usehooks-ts: ^2.9.1
 
@@ -28,6 +31,7 @@ dependencies:
 
 devDependencies:
   '@ark-ui/react': 0.0.0-rc-20230317004640_biqbaboplfbrettd7655fr4n2y
+  '@ark-ui/solid': 0.0.0-rc-20230317004640_solid-js@1.6.15
   '@codesandbox/sandpack-react': 2.1.9_biqbaboplfbrettd7655fr4n2y
   '@pandacss/dev': 0.0.0-dev-20230213064154_h6mb5e5dbgrpws2muzkfzsieoq
   '@theme-toggles/react': 4.1.0_biqbaboplfbrettd7655fr4n2y
@@ -41,6 +45,8 @@ devDependencies:
   prettier: 2.8.5
   raw-loader: 4.0.2
   react-icons: 4.8.0_react@18.2.0
+  solid-icons: 1.0.4_solid-js@1.6.15
+  solid-js: 1.6.15
   typescript: 5.0.2
   usehooks-ts: 2.9.1_biqbaboplfbrettd7655fr4n2y
 
@@ -90,6 +96,40 @@ packages:
       '@zag-js/types': 0.3.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: true
+
+  /@ark-ui/solid/0.0.0-rc-20230317004640_solid-js@1.6.15:
+    resolution: {integrity: sha512-dcdnYKMl1nTLU0QqGvCJM8qUygi5wNFR/VQpqCOUuGTT3WwXk5/VwN5sL95xATfYV+YQSnDAe0bKgC+B9GE6/w==}
+    peerDependencies:
+      solid-js: '>=1.6.0'
+    dependencies:
+      '@polymorphic-factory/solid': 0.2.0_solid-js@1.6.15
+      '@zag-js/accordion': 0.2.13
+      '@zag-js/anatomy': 0.1.4
+      '@zag-js/checkbox': 0.2.14
+      '@zag-js/combobox': 0.2.16
+      '@zag-js/dialog': 0.2.13
+      '@zag-js/editable': 0.2.14
+      '@zag-js/hover-card': 0.2.6
+      '@zag-js/menu': 0.3.12
+      '@zag-js/number-input': 0.2.14
+      '@zag-js/pagination': 0.1.14
+      '@zag-js/pin-input': 0.2.14
+      '@zag-js/popover': 0.2.13
+      '@zag-js/pressable': 0.3.13
+      '@zag-js/radio-group': 0.2.1
+      '@zag-js/range-slider': 0.2.15
+      '@zag-js/rating-group': 0.2.14
+      '@zag-js/select': 0.1.14
+      '@zag-js/slider': 0.2.15
+      '@zag-js/solid': 0.2.10_solid-js@1.6.15
+      '@zag-js/splitter': 0.2.14
+      '@zag-js/tabs': 0.2.13
+      '@zag-js/tags-input': 0.3.14
+      '@zag-js/toast': 0.2.14
+      '@zag-js/tooltip': 0.2.13
+      '@zag-js/types': 0.3.4
+      solid-js: 1.6.15
     dev: true
 
   /@astrojs/compiler/0.31.4:
@@ -1483,6 +1523,14 @@ packages:
       react: 18.2.0
     dev: true
 
+  /@polymorphic-factory/solid/0.2.0_solid-js@1.6.15:
+    resolution: {integrity: sha512-AFH5Mffj/4q4I6wM88BBQqW64/TzZ6L1ltipkY6mP2EMllGtzNrkWE7HqPNh7Ji+zwg6MHeis1IXDS/Mcn7SvA==}
+    peerDependencies:
+      solid-js: '>=1.6.0'
+    dependencies:
+      solid-js: 1.6.15
+    dev: true
+
   /@react-hook/intersection-observer/3.1.1_react@18.2.0:
     resolution: {integrity: sha512-OTDx8/wFaRvzFtKl1dEUEXSOqK2zVJHporiTTdC2xO++0e9FEx9wIrPis5q3lqtXeZH9zYGLbk+aB75qNFbbuw==}
     peerDependencies:
@@ -2099,6 +2147,18 @@ packages:
       '@zag-js/numeric-range': 0.1.1
       '@zag-js/types': 0.3.4
       '@zag-js/utils': 0.3.3
+    dev: true
+
+  /@zag-js/solid/0.2.10_solid-js@1.6.15:
+    resolution: {integrity: sha512-YQ4ndCKRsK2JZbbI/bvn1iKd500VpS0sbzlSOY9JlwDa+ev9cB04SgMdEIvs2Z1+uAjl6m9wp2Ux7+7zrZlDyg==}
+    peerDependencies:
+      solid-js: '>=1.1.3'
+    dependencies:
+      '@zag-js/core': 0.2.10
+      '@zag-js/store': 0.2.8
+      '@zag-js/types': 0.3.4
+      hyphenate-style-name: 1.0.4
+      solid-js: 1.6.15
     dev: true
 
   /@zag-js/splitter/0.2.14:
@@ -3873,6 +3933,10 @@ packages:
   /human-signals/3.0.1:
     resolution: {integrity: sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==}
     engines: {node: '>=12.20.0'}
+    dev: true
+
+  /hyphenate-style-name/1.0.4:
+    resolution: {integrity: sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==}
     dev: true
 
   /ieee754/1.2.1:
@@ -5708,6 +5772,21 @@ packages:
   /slash/4.0.0:
     resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
     engines: {node: '>=12'}
+    dev: true
+
+  /solid-icons/1.0.4_solid-js@1.6.15:
+    resolution: {integrity: sha512-gJTp4in3+OYCs9WvDkSLt4Los2unR3Uoder8wjh15GsfP20xiNOLfPTJllXmn+fI8+k3x7bRYtLGIgWd9fUQug==}
+    engines: {node: '>= 16'}
+    peerDependencies:
+      solid-js: '*'
+    dependencies:
+      solid-js: 1.6.15
+    dev: true
+
+  /solid-js/1.6.15:
+    resolution: {integrity: sha512-xEuMUIdDf4YRFT4i3XEJCNg4Y21lZiWWPSEqj0R3UnLLpENGJVXkqpmbIyRU5CuMImKPIEu5CYgmFKL7Npfe1A==}
+    dependencies:
+      csstype: 3.1.1
     dev: true
 
   /source-map-js/1.0.2:
