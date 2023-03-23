@@ -26,7 +26,6 @@
   justify-content: center;
   height: 40px;
   min-width: 40px;
-  padding-inline: 12px;
   color: var(--fg-emphasized);
   font-size: 0.875rem;
   user-select: none;

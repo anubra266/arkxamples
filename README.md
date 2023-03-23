@@ -25,7 +25,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Menu         | 🟢    | ⚪  | ⚪    |
 | Number Input | 🟢    | ⚪  | ⚪    |
 | Pagination   | 🟢    | ⚪  | ⚪    |
-| Pin Input    | ⚪    | ⚪  | ⚪    |
+| Pin Input    | 🟢    | ⚪  | ⚪    |
 | Popover      | ⚪    | ⚪  | ⚪    |
 | Pressable    | ⚪    | ⚪  | ⚪    |
 | Radio Group  | ⚪    | ⚪  | ⚪    |
