@@ -109,6 +109,7 @@ export function Navigation(props: ComponentControlsProps) {
                   <Stack gap="3" width="full">
                     <Flex gap="1">
                       <FrameworkSwitch
+                        {...tempConfig}
                         norPortal
                         onChange={(opt) => {
                           setComponentConfig(
@@ -119,6 +120,7 @@ export function Navigation(props: ComponentControlsProps) {
                         }}
                       />
                       <StyleSolutionSwitch
+                        {...tempConfig}
                         norPortal
                         onChange={(opt) => {
                           setComponentConfig(
@@ -129,6 +131,7 @@ export function Navigation(props: ComponentControlsProps) {
                         }}
                       />
                       <StyleTypeSwitch
+                        {...tempConfig}
                         styleSolution={tempConfig.styleSolution}
                         norPortal
                         onChange={(opt) => {

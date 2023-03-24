@@ -23,6 +23,9 @@ export type ComponentControlsProps = {
 export type ComponentControl = {
   onChange: SelectProps["onChange"];
   norPortal?: boolean;
+  framework?: Framework;
+  styleSolution?: StyleSolution;
+  styleType?: StyleType;
 };
 export function ComponentControls(props: ComponentControlsProps) {
   const { setComponentConfig } = useComponentConfig();

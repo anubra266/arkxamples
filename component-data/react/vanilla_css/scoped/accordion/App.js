@@ -4,8 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@ark-ui/react";
-import { FiChevronDown } from "react-icons/fi";
 
+import AccordionIcon from "./AccordionIcon";
 import "./styles.css";
 
 const items = ["React", "Solid", "Vue"];
@@ -35,12 +35,3 @@ export default function Page() {
     </Accordion>
   );
 }
-
-const AccordionIcon = (props) => {
-  const iconStyles = {
-    transform: props.isOpen ? "rotate(-180deg)" : undefined,
-    transition: "transform 0.2s",
-    transformOrigin: "center",
-  };
-  return <FiChevronDown style={iconStyles} />;
-};

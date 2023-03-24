@@ -13,25 +13,23 @@ import { select } from "design-system/recipes";
 
 import { ComponentControl } from "components/ComponentControls";
 
-import {
-  STYLE_SOLUTIONS,
-  StyleSolution,
-} from "utils/component-config/constants";
+import { STYLE_SOLUTIONS } from "utils/component-config/constants";
 import { useComponentConfig } from "utils/useComponentConfig";
 
 import { SelectIcon } from "../SelectIcon";
 
-type StyleTypeSwitchProps = ComponentControl & {
-  styleSolution?: StyleSolution;
-};
-export function StyleTypeSwitch(props: StyleTypeSwitchProps) {
+export function StyleTypeSwitch(props: ComponentControl) {
   const Wrapper = props.norPortal ? Fragment : Portal;
 
-  const { styleType, styleSolution } = useComponentConfig();
+  const { styleType: currentStyleType, styleSolution: currentStyleSolution } =
+    useComponentConfig();
 
-  const styleTypeOption = STYLE_SOLUTIONS[
-    props.styleSolution ?? styleSolution
-  ].types.find((opt) => opt.value === styleType);
+  const styleSolution = props.styleSolution ?? currentStyleSolution;
+  const styleType = props.styleType ?? currentStyleType;
+
+  const styleTypeOption = STYLE_SOLUTIONS[styleSolution].types.find(
+    (opt) => opt.value === styleType
+  );
   return (
     <Select
       positioning={{ gutter: 4 }}
