@@ -21,9 +21,7 @@ export default function Page() {
       <Checkbox
         checked={allChecked()}
         indeterminate={isIndeterminate()}
-        onChange={(e) => {
-          setCheckedItems([e.checked, e.checked]);
-        }}
+        onChange={(e) => setCheckedItems([e.checked, e.checked])}
       >
         {(state) => (
           <>
