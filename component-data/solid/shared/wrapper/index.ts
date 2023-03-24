@@ -1,18 +1,69 @@
 export const sharedSolidCode = {
   "/index.css":
-    require("!!raw-loader!component-data/react/shared/wrapper/styles.css")
+    require("!!raw-loader!component-data/react/shared/wrapper/index.css")
       .default,
 
-  "/index.html": /*html*/ `<html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="src/index.tsx"></script>
-  </body>
-  </html>`,
+  "/vite.config.ts": require("./vite.config.js").default,
+  "/vite-env.d.ts": `/// <reference types="vite/client" />`,
+
+  "/tsconfig.json": `{
+    "compilerOptions": {
+      "target": "ESNext",
+      "useDefineForClassFields": true,
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "allowJs": false,
+      "skipLibCheck": true,
+      "esModuleInterop": false,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "preserve",
+      "jsxImportSource": "solid-js"
+    },
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+  }
+  `,
+  "/tsconfig.node.json": `{
+    "compilerOptions": {
+      "composite": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "allowSyntheticDefaultImports": true,
+      "jsx": "preserve"
+    },
+    "include": ["vite.config.ts", "src/entry-server.tsx", "src/vite-env.d.ts"]
+  }
+  `,
+
+  "/package.json": `{
+    "name": "vite-project",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "start": "vite",
+      "dev": "vite",
+      "build": "vite build",
+      "serve": "vite preview"
+    },
+    "dependencies": {
+      "solid-js": "^1.6.4",
+      "@ark-ui/solid": "0.0.0-rc-20230319215607"
+    },
+    "devDependencies": {
+      "vite": "^4.0.0",
+      "vite-plugin-solid": "^2.5.0"
+    }
+  }
+  `,
+
+  "/index.html": require("!!raw-loader!./index.html").default,
 
   "/index.tsx": /*javascript*/ `import { render } from "solid-js/web";
   import { createEffect } from "solid-js";
@@ -54,7 +105,7 @@ export const sharedSolidCode = {
         <App />
       </>
     ),
-    document.getElementById("root")
+    document.getElementById("root") as HTMLElement
   );
   `,
 };

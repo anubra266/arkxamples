@@ -26,7 +26,7 @@ export function FrameworkSwitch(props: ComponentControl) {
   return (
     <Select
       positioning={{ gutter: 4 }}
-      defaultValue={FRAMEWORKS[framework]}
+      selectedOption={FRAMEWORKS[framework]}
       onChange={props.onChange}
     >
       {({ selectedOption, isOpen }) => (

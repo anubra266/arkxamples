@@ -1,5 +1,5 @@
 export const sharedReactCode = {
-  "/index.css": require("!!raw-loader!./styles.css").default,
+  "/index.css": require("!!raw-loader!./index.css").default,
 
   "/index.js": /*javascript*/ `
   import React, { StrictMode } from "react";

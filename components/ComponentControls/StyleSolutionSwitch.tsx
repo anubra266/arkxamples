@@ -25,7 +25,7 @@ export function StyleSolutionSwitch(props: ComponentControl) {
   return (
     <Select
       positioning={{ gutter: 4 }}
-      defaultValue={STYLE_SOLUTIONS[styleSolution]}
+      selectedOption={STYLE_SOLUTIONS[styleSolution]}
       onChange={props.onChange}
     >
       {({ selectedOption, isOpen }) => (

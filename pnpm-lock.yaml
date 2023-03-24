@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@ark-ui/react': 0.0.0-rc-20230317004640
   '@ark-ui/solid': 0.0.0-rc-20230317004640
+  '@ark-ui/vue': rc
   '@codesandbox/sandpack-react': ^2.1.9
   '@pandacss/dev': 0.0.0-dev-20230213064154
   '@theme-toggles/react': ^4.1.0
@@ -32,6 +33,7 @@ dependencies:
 devDependencies:
   '@ark-ui/react': 0.0.0-rc-20230317004640_biqbaboplfbrettd7655fr4n2y
   '@ark-ui/solid': 0.0.0-rc-20230317004640_solid-js@1.6.15
+  '@ark-ui/vue': 0.0.0-rc-20230323110837
   '@codesandbox/sandpack-react': 2.1.9_biqbaboplfbrettd7655fr4n2y
   '@pandacss/dev': 0.0.0-dev-20230213064154_h6mb5e5dbgrpws2muzkfzsieoq
   '@theme-toggles/react': 4.1.0_biqbaboplfbrettd7655fr4n2y
@@ -130,6 +132,39 @@ packages:
       '@zag-js/tooltip': 0.2.13
       '@zag-js/types': 0.3.4
       solid-js: 1.6.15
+    dev: true
+
+  /@ark-ui/vue/0.0.0-rc-20230323110837:
+    resolution: {integrity: sha512-ZonQL43ckIU3UXjeku0vZ+bJe/p3ahRr/awX6M+hW1Y9t4XJv5wQ0Vktj4iOOCsR+AzajIeUICTQZvoavYQ1nw==}
+    peerDependencies:
+      vue: '>=3.0.0'
+    dependencies:
+      '@polymorphic-factory/vue': 0.2.0
+      '@zag-js/accordion': 0.2.13
+      '@zag-js/anatomy': 0.1.4
+      '@zag-js/checkbox': 0.2.14
+      '@zag-js/combobox': 0.2.16
+      '@zag-js/dialog': 0.2.13
+      '@zag-js/editable': 0.2.14
+      '@zag-js/hover-card': 0.2.6
+      '@zag-js/menu': 0.3.12
+      '@zag-js/number-input': 0.2.14
+      '@zag-js/pagination': 0.1.14
+      '@zag-js/pin-input': 0.2.14
+      '@zag-js/popover': 0.2.13
+      '@zag-js/pressable': 0.3.13
+      '@zag-js/radio-group': 0.2.1
+      '@zag-js/range-slider': 0.2.15
+      '@zag-js/rating': 0.2.4
+      '@zag-js/rating-group': 0.2.14
+      '@zag-js/select': 0.1.14
+      '@zag-js/slider': 0.2.15
+      '@zag-js/splitter': 0.2.14
+      '@zag-js/tabs': 0.2.13
+      '@zag-js/tags-input': 0.3.14
+      '@zag-js/toast': 0.2.14
+      '@zag-js/tooltip': 0.2.13
+      '@zag-js/vue': 0.2.10
     dev: true
 
   /@astrojs/compiler/0.31.4:
@@ -1531,6 +1566,12 @@ packages:
       solid-js: 1.6.15
     dev: true
 
+  /@polymorphic-factory/vue/0.2.0:
+    resolution: {integrity: sha512-0MKD0A48lRTl2Os2jnCOjdwJOstcFxdzcXcrhM0ER6gSuRNw7rS06nS0IbjZcFQP+nyrWSBAXhOKiWR47QYnyg==}
+    peerDependencies:
+      vue: '>=3'
+    dev: true
+
   /@react-hook/intersection-observer/3.1.1_react@18.2.0:
     resolution: {integrity: sha512-OTDx8/wFaRvzFtKl1dEUEXSOqK2zVJHporiTTdC2xO++0e9FEx9wIrPis5q3lqtXeZH9zYGLbk+aB75qNFbbuw==}
     peerDependencies:
@@ -1808,6 +1849,10 @@ packages:
       '@zag-js/utils': 0.3.3
     dev: true
 
+  /@zag-js/anatomy/0.1.1:
+    resolution: {integrity: sha512-OpeEVfQ8ITDA1hQRtRNCUC+FiQiPwwDjoeyNR161p/Pt212l/YbZdVP8Q72TQG2wQTtjoJ5qKB6da++KFjoNIg==}
+    dev: true
+
   /@zag-js/anatomy/0.1.4:
     resolution: {integrity: sha512-Xc5QmQwY0W3VdkukYVaoujuCmgf0Y2ZbXhIBi0CJ0d8wWRwjkphhJu8l9kDyX4ElpyzvExYbrpTuQoI4BspaVQ==}
     dev: true
@@ -1865,6 +1910,13 @@ packages:
     dependencies:
       '@zag-js/store': 0.2.8
       klona: 2.0.6
+    dev: true
+
+  /@zag-js/core/0.2.2:
+    resolution: {integrity: sha512-Zqzm8qa8S/LrAIGsjSy7g/XU0G2QUfWvwguGOtuJabunYGtaEE5vl4aX3qJE2QkTWb0rLalowushlPdOe6pUAw==}
+    dependencies:
+      '@zag-js/store': 0.2.0
+      klona: 2.0.5
     dev: true
 
   /@zag-js/dialog/0.2.13:
@@ -2095,6 +2147,14 @@ packages:
       '@zag-js/utils': 0.3.3
     dev: true
 
+  /@zag-js/rating/0.2.4:
+    resolution: {integrity: sha512-y39W5IO1PbJDPh8hVOsEUjDXsJP2pUoaA6mvfMtdICGa0Zj1kSFl0nYWyfsHEhst4Yxw7wmAV/nTT/smTi2eeQ==}
+    dependencies:
+      '@zag-js/anatomy': 0.1.1
+      '@zag-js/core': 0.2.2
+      '@zag-js/types': 0.3.1
+    dev: true
+
   /@zag-js/react/0.3.10_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-H/Yb0bpyZDiio4EXN76Huns00qzTAjfnaizo9j4B19E6iFXkA0XZ3acMrc2IQmUKtA6MPs5Xn2c2HZFkGKqeDQ==}
     peerDependencies:
@@ -2173,6 +2233,12 @@ packages:
       '@zag-js/utils': 0.3.3
     dev: true
 
+  /@zag-js/store/0.2.0:
+    resolution: {integrity: sha512-B9PxSMTYu9KXEMFoyB2El+mey41eqVMVKU6cqE8GlbzNu71rdlSz2mPzvK3qQVXA0rXBhB4xapj3ScosSMyhTg==}
+    dependencies:
+      proxy-compare: 2.3.0
+    dev: true
+
   /@zag-js/store/0.2.8:
     resolution: {integrity: sha512-QgBnbYjb5jvcTt0+JCoPJ9YKM9vP1/RR78mkT6fWCIM0N8hnZu4MzQPVKxiopxZ8XIrDbUjFWlJLzL83uiYv2g==}
     dependencies:
@@ -2247,6 +2313,12 @@ packages:
       '@zag-js/utils': 0.3.3
     dev: true
 
+  /@zag-js/types/0.3.1:
+    resolution: {integrity: sha512-mSGkt+mqmvE+E6RAR1py74Pbzb5q2HjhijkpsUojHsDa+DIX9KJ2XTKGt9Dv3qxqwY81/pQdBQFNLDNKMAeYdQ==}
+    dependencies:
+      csstype: 3.1.1
+    dev: true
+
   /@zag-js/types/0.3.4:
     resolution: {integrity: sha512-KkZOMNqFZA0TaVF70O6WIRJPWTcDyRQjhXLDkLVfo99gwJdsC1bMZWfjrCiR8g1CfzvCyGNSWzdArIgzTJVEMA==}
     dependencies:
@@ -2259,6 +2331,16 @@ packages:
 
   /@zag-js/visually-hidden/0.0.1:
     resolution: {integrity: sha512-wEhubtraCJOPFh3aPcidQWXF7a9O1TG1I48blpGt3XEI9brwpp7Gjjvus5uGkH00s+WziEudy1dv2B0HOTexNA==}
+    dev: true
+
+  /@zag-js/vue/0.2.10:
+    resolution: {integrity: sha512-+epCusiD2qyEX7/bTU6NURtAuOtJro/E3WpzONSmLNpTA16DxlQ/Rmf74MkdEkTw9OhL6jKWCN4B1XBdnb9JSw==}
+    peerDependencies:
+      vue: '>=3.0.0'
+    dependencies:
+      '@zag-js/core': 0.2.10
+      '@zag-js/store': 0.2.8
+      '@zag-js/types': 0.3.4
     dev: true
 
   /acorn-jsx/5.3.2_acorn@8.8.2:
@@ -4313,6 +4395,11 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /klona/2.0.5:
+    resolution: {integrity: sha512-pJiBpiXMbt7dkzXe8Ghj/u4FfXOOa98fPW+bihOJ4SjnoijweJrNThJfd3ifXpXhREjpoF2mZVH1GfS9LV3kHQ==}
+    engines: {node: '>= 8'}
+    dev: true
+
   /klona/2.0.6:
     resolution: {integrity: sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==}
     engines: {node: '>= 8'}
@@ -5398,6 +5485,10 @@ packages:
 
   /property-information/6.2.0:
     resolution: {integrity: sha512-kma4U7AFCTwpqq5twzC1YVIDXSqg6qQK6JN0smOw8fgRy1OkMi0CYSzFmsy6dnqSenamAtj0CyXMUJ1Mf6oROg==}
+    dev: true
+
+  /proxy-compare/2.3.0:
+    resolution: {integrity: sha512-c3L2CcAi7f7pvlD0D7xsF+2CQIW8C3HaYx2Pfgq8eA4HAl3GAH6/dVYsyBbYF/0XJs2ziGLrzmz5fmzPm6A0pQ==}
     dev: true
 
   /proxy-compare/2.5.0:

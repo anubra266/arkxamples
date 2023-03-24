@@ -19,6 +19,7 @@
   "devDependencies": {
     "@ark-ui/react": "0.0.0-rc-20230317004640",
     "@ark-ui/solid": "0.0.0-rc-20230317004640",
+    "@ark-ui/vue": "rc",
     "@codesandbox/sandpack-react": "^2.1.9",
     "@pandacss/dev": "0.0.0-dev-20230213064154",
     "@theme-toggles/react": "^4.1.0",

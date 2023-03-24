@@ -27,16 +27,12 @@ export const arkPackage = {
     "@ark-ui/react": "0.0.0-rc-20230319215607",
     "react-icons": "latest",
   },
-  [Framework.SOLID]: {
-    "@ark-ui/solid": "0.0.0-rc-20230319215607",
-    "solid-icons": "latest",
-  },
-  [Framework.VUE]: { "@ark-ui/vue": "latest" },
+  [Framework.SOLID]: undefined,
+  [Framework.VUE]: undefined,
 };
 
 export const templates = {
   [Framework.REACT]: "react",
   [Framework.SOLID]: "solid",
-  // [Framework.VUE_JSX]: "",
-  // [Framework.VUE_SFC]: "",
+  [Framework.VUE]: undefined,
 } as const;
