@@ -95,6 +95,8 @@ export const useComponentConfig = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [queryString]);
 
+  if (typeof window === "undefined") return;
+
   const configSetter = (newConfigOrConfigFn: ConfigSetterArg) =>
     setConfig(
       typeof newConfigOrConfigFn === "function"

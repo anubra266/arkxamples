@@ -30,7 +30,7 @@ export default function Page() {
               {state().isChecked && <CheckIcon />}
               {state().isIndeterminate && <MinusIcon />}
             </CheckboxControl>
-            <CheckboxLabel>Checkbox</CheckboxLabel>
+            <CheckboxLabel>Parent Checkbox</CheckboxLabel>
           </>
         )}
       </Checkbox>
@@ -45,7 +45,7 @@ export default function Page() {
               <CheckboxControl>
                 {state().isChecked && <CheckIcon />}
               </CheckboxControl>
-              <CheckboxLabel>Checkbox</CheckboxLabel>
+              <CheckboxLabel>Child Checkbox 1</CheckboxLabel>
             </>
           )}
         </Checkbox>
@@ -59,7 +59,7 @@ export default function Page() {
               <CheckboxControl>
                 {state().isChecked && <CheckIcon />}
               </CheckboxControl>
-              <CheckboxLabel>Checkbox</CheckboxLabel>
+              <CheckboxLabel>Child Checkbox 2</CheckboxLabel>
             </>
           )}
         </Checkbox>

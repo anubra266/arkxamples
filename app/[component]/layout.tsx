@@ -4,17 +4,22 @@ import { SandpackLayout, SandpackProvider } from "@codesandbox/sandpack-react";
 import { PropsWithChildren } from "react";
 
 import { arkPackage, templates } from "utils/component-setup/constants";
+import { ComponentId } from "utils/types";
 import { useComponentConfig } from "utils/useComponentConfig";
 import { useComponentSetup } from "utils/useComponentSetup";
 
 const ComponentLayout = (
-  props: PropsWithChildren & { params: Record<string, string> }
+  props: PropsWithChildren & { params: { component: ComponentId } }
 ) => {
   const { component: componentId } = props.params;
 
-  const { framework } = useComponentConfig();
+  const componentDetails = useComponentSetup(componentId);
 
-  const componentDetails = useComponentSetup(componentId as any);
+  const componentConfig = useComponentConfig();
+
+  if (!componentConfig) return "Loading...";
+
+  const { framework } = componentConfig;
 
   return (
     <SandpackProvider

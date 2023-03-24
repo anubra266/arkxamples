@@ -5,37 +5,28 @@ CheckboxControl,
 CheckboxInput,
 CheckboxLabel
 } from "@ark-ui/vue";
-import { reactive, ref, watch } from "vue";
+import { computed, reactive } from "vue";
 
 import CheckIcon from "./CheckIcon.vue";
 import MinusIcon from "./MinusIcon.vue";
 
 import "./styles.css";
 
-const parentChecked = ref(false);
-const someChecked = ref(false);
-const childItems = reactive([false, false]);
+const checkedItems = reactive([false, false]);
 
-watch(childItems, (items) => {
-  parentChecked.value = items.every(Boolean);
-  someChecked.value = items.some(Boolean) && !parentChecked.value;
-});
-
-watch(
-  () => parentChecked.value,
-  (parentVal) => {
-    if (someChecked.value && !parentVal) return;
-    childItems.map((_, idx) => {
-      childItems[idx] = parentVal;
-    });
-    return;
-  }
-);
+const allChecked = computed(() => checkedItems.every(Boolean));
+const someChecked = computed(() => checkedItems.some(Boolean)) && !allChecked;
 </script>
 
 <template>
   <Checkbox
-    v-model="parentChecked"
+    @change="
+      (checked) => {
+        checkedItems[0] = checked;
+        checkedItems[1] = checked;
+      }
+    "
+    v-model="allChecked"
     :indeterminate="someChecked"
     v-slot="{ isChecked, isIndeterminate }"
   >
@@ -47,19 +38,19 @@ watch(
     <CheckboxLabel>Parent Checkbox</CheckboxLabel>
   </Checkbox>
   <div>
-    <Checkbox v-model="childItems[0]" v-slot="{ isChecked }">
+    <Checkbox v-model="checkedItems[0]" v-slot="{ isChecked }">
       <CheckboxInput />
       <CheckboxControl>
         <CheckIcon v-show="isChecked" />
       </CheckboxControl>
-      <CheckboxLabel>Child One Checkbox</CheckboxLabel>
+      <CheckboxLabel>Child Checkbox 1</CheckboxLabel>
     </Checkbox>
-    <Checkbox v-model="childItems[1]" v-slot="{ isChecked }">
+    <Checkbox v-model="checkedItems[1]" v-slot="{ isChecked }">
       <CheckboxInput />
       <CheckboxControl>
         <CheckIcon v-show="isChecked" />
       </CheckboxControl>
-      <CheckboxLabel>Child Two Checkbox</CheckboxLabel>
+      <CheckboxLabel>Child Checkbox 2</CheckboxLabel>
     </Checkbox>
   </div>
 </template>

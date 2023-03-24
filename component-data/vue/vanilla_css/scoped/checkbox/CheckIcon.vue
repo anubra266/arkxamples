@@ -1,5 +1,5 @@
 <template>
-    <svg
+  <svg
     width="14"
     height="14"
     view-box="0 0 14 14"
