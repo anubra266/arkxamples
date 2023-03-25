@@ -5,6 +5,7 @@ import { PropsWithChildren } from "react";
 
 import { arkPackage, templates } from "utils/component-setup/constants";
 import { ComponentId } from "utils/types";
+import { useColorMode } from "utils/useColorMode";
 import { useComponentConfig } from "utils/useComponentConfig";
 import { useComponentSetup } from "utils/useComponentSetup";
 
@@ -12,6 +13,8 @@ const ComponentLayout = (
   props: PropsWithChildren & { params: { component: ComponentId } }
 ) => {
   const { component: componentId } = props.params;
+
+  const { colorMode } = useColorMode();
 
   const componentDetails = useComponentSetup(componentId);
 
@@ -33,9 +36,7 @@ const ComponentLayout = (
         },
       }}
       files={componentDetails.files}
-      // Multiple themes suck right now https://github.com/codesandbox/sandpack/issues/849
-      // ! Only dark mode for now. It's messing with the page
-      theme="dark"
+      theme={colorMode}
     >
       <SandpackLayout>{props.children}</SandpackLayout>
     </SandpackProvider>
