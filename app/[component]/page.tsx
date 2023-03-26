@@ -13,14 +13,11 @@ import { Navbar } from "components/Navbar";
 
 import { getComponent } from "utils/component-setup";
 import { ComponentParams } from "utils/types";
-import { useComponentConfig } from "utils/useComponentConfig";
 import { useSyncSandboxColorMode } from "utils/useSyncSandboxColorMode";
 
 export default function Component(props: { params: ComponentParams }) {
   const { component: componentId } = props.params;
   const component = getComponent(componentId as any);
-  const { framework, styleSolution, styleType } = useComponentConfig();
-  const key = framework + styleSolution + styleType;
 
   useSyncSandboxColorMode();
 
@@ -46,7 +43,6 @@ export default function Component(props: { params: ComponentParams }) {
           <SandpackPreview
             showOpenInCodeSandbox={false}
             showRefreshButton={false}
-            key={key}
           />
         </SplitterPanel>
         <SplitterResizeTrigger id="preview:controls">
