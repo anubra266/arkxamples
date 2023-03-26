@@ -1,9 +1,4 @@
-import {
-  ReadonlyURLSearchParams,
-  usePathname,
-  useRouter,
-  useSearchParams,
-} from "next/navigation";
+import { ReadonlyURLSearchParams, useSearchParams } from "next/navigation";
 // import { useRouter } from "next/";
 import { useEffect } from "react";
 import { useLocalStorage } from "usehooks-ts";
@@ -67,8 +62,6 @@ const validateParams = (
 
 export const useComponentConfig = () => {
   const searchParams = useSearchParams();
-  const router = useRouter();
-  const pathname = usePathname();
 
   const configWithParams = Object.entries(defaultConfig)
     //* Just so styleSolution comes before styleType, as it has to be validated first

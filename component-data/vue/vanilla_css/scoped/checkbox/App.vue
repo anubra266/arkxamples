@@ -26,29 +26,29 @@ const someChecked = computed(() => checkedItems.some(Boolean)) && !allChecked;
         checkedItems[1] = checked;
       }
     "
-    v-model="allChecked"
-    :indeterminate="someChecked"
+    v-model:checked="allChecked"
+    v-model:indeterminate="someChecked"
     v-slot="{ isChecked, isIndeterminate }"
   >
     <CheckboxInput />
     <CheckboxControl>
-      <CheckIcon v-show="isChecked" />
-      <MinusIcon v-show="isIndeterminate" />
+      <CheckIcon v-if="isChecked" />
+      <MinusIcon v-if="isIndeterminate" />
     </CheckboxControl>
     <CheckboxLabel>Parent Checkbox</CheckboxLabel>
   </Checkbox>
   <div>
-    <Checkbox v-model="checkedItems[0]" v-slot="{ isChecked }">
+    <Checkbox v-model:checked="checkedItems[0]" v-slot="{ isChecked }">
       <CheckboxInput />
       <CheckboxControl>
-        <CheckIcon v-show="isChecked" />
+        <CheckIcon v-if="isChecked" />
       </CheckboxControl>
       <CheckboxLabel>Child Checkbox 1</CheckboxLabel>
     </Checkbox>
-    <Checkbox v-model="checkedItems[1]" v-slot="{ isChecked }">
+    <Checkbox v-model:checked="checkedItems[1]" v-slot="{ isChecked }">
       <CheckboxInput />
       <CheckboxControl>
-        <CheckIcon v-show="isChecked" />
+        <CheckIcon v-if="isChecked" />
       </CheckboxControl>
       <CheckboxLabel>Child Checkbox 2</CheckboxLabel>
     </Checkbox>

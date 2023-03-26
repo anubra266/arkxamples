@@ -33,7 +33,7 @@ dependencies:
 devDependencies:
   '@ark-ui/react': 0.0.0-rc-20230317004640_biqbaboplfbrettd7655fr4n2y
   '@ark-ui/solid': 0.0.0-rc-20230317004640_solid-js@1.6.15
-  '@ark-ui/vue': 0.0.0-rc-20230323110837
+  '@ark-ui/vue': 0.0.0-rc-20230324215625
   '@codesandbox/sandpack-react': 2.1.9_biqbaboplfbrettd7655fr4n2y
   '@pandacss/dev': 0.0.0-dev-20230213064154_h6mb5e5dbgrpws2muzkfzsieoq
   '@theme-toggles/react': 4.1.0_biqbaboplfbrettd7655fr4n2y
@@ -134,8 +134,8 @@ packages:
       solid-js: 1.6.15
     dev: true
 
-  /@ark-ui/vue/0.0.0-rc-20230323110837:
-    resolution: {integrity: sha512-ZonQL43ckIU3UXjeku0vZ+bJe/p3ahRr/awX6M+hW1Y9t4XJv5wQ0Vktj4iOOCsR+AzajIeUICTQZvoavYQ1nw==}
+  /@ark-ui/vue/0.0.0-rc-20230324215625:
+    resolution: {integrity: sha512-uVNgypMsimIzCKm6pRZ7OiPT49H6toAV/mPcbMCE2CKbigDIWUOE+/iz9dDJyu94t05i3c2W3b+n3/0GNMkjRA==}
     peerDependencies:
       vue: '>=3.0.0'
     dependencies:

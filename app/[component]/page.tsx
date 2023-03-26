@@ -1,26 +1,26 @@
 "use client";
 
 import { Splitter, SplitterPanel, SplitterResizeTrigger } from "@ark-ui/react";
-import {
-  SandpackCodeEditor,
-  SandpackPreview,
-} from "@codesandbox/sandpack-react";
+import { SandpackPreview } from "@codesandbox/sandpack-react";
 
 import { css, cx } from "design-system/css";
-import { Flex, panda } from "design-system/jsx";
+import { panda } from "design-system/jsx";
 import { splitter } from "design-system/recipes";
 
+import { CodeEditor } from "components/CodeEditor";
 import { ComponentControls } from "components/ComponentControls";
-import { EditorTabs } from "components/EditorTabs";
 import { Navbar } from "components/Navbar";
 
 import { getComponent } from "utils/component-setup";
 import { ComponentParams } from "utils/types";
+import { useComponentConfig } from "utils/useComponentConfig";
 import { useSyncSandboxColorMode } from "utils/useSyncSandboxColorMode";
 
 export default function Component(props: { params: ComponentParams }) {
   const { component: componentId } = props.params;
   const component = getComponent(componentId as any);
+  const { framework, styleSolution, styleType } = useComponentConfig();
+  const key = framework + styleSolution + styleType;
 
   useSyncSandboxColorMode();
 
@@ -46,6 +46,7 @@ export default function Component(props: { params: ComponentParams }) {
           <SandpackPreview
             showOpenInCodeSandbox={false}
             showRefreshButton={false}
+            key={key}
           />
         </SplitterPanel>
         <SplitterResizeTrigger id="preview:controls">
@@ -65,15 +66,7 @@ export default function Component(props: { params: ComponentParams }) {
         >
           <Navbar />
           <ComponentControls component={component} />
-          <EditorTabs componentId={componentId} />
-          <Flex overflow="scroll" direction="column">
-            <SandpackCodeEditor
-              showRunButton={false}
-              showLineNumbers
-              showTabs={false}
-              style={{ height: "100%" }}
-            />
-          </Flex>
+          <CodeEditor componentId={componentId} />
         </SplitterPanel>
       </Splitter>
     </>
