@@ -1,4 +1,9 @@
-import { ReadonlyURLSearchParams, useSearchParams } from "next/navigation";
+import {
+  ReadonlyURLSearchParams,
+  usePathname,
+  useRouter,
+  useSearchParams,
+} from "next/navigation";
 // import { useRouter } from "next/";
 import { useEffect } from "react";
 import { useLocalStorage } from "usehooks-ts";
@@ -63,6 +68,9 @@ const validateParams = (
 export const useComponentConfig = () => {
   const searchParams = useSearchParams();
 
+  const pathname = usePathname();
+  const router = useRouter();
+
   const configWithParams = Object.entries(defaultConfig)
     //* Just so styleSolution comes before styleType, as it has to be validated first
     .sort(function (a, b) {
@@ -93,6 +101,7 @@ export const useComponentConfig = () => {
     if (queryString) {
       setConfig(configWithParams);
     }
+    router.replace(pathname);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [queryString]);
 

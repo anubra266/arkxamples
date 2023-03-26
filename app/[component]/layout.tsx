@@ -29,6 +29,7 @@ const ComponentLayout = (
       template={templates[framework]}
       options={{
         visibleFiles: componentDetails.visibleFiles,
+        bundlerURL: "https://sandpack-bundler.pages.dev",
       }}
       customSetup={{
         dependencies: {

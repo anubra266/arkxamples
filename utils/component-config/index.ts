@@ -24,5 +24,3 @@ export const setComponentConfig = <K extends keyof ComponentConfig>(
     [key]: value,
   }));
 };
-
-//TODO Just rely on query params. Only use local storage to remember default one if there's no query
