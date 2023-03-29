@@ -9,9 +9,6 @@ export const useComponentsSearch = () => {
     comp.label.toLocaleLowerCase().includes(query.toLocaleLowerCase())
   );
 
-  // const filteredComponents =
-  //   resultComponents.length > 0 ? resultComponents : components;
-
   const emptyResult = !!query && filteredComponents.length < 1;
 
   return { query, setQuery, filteredComponents, emptyResult };
