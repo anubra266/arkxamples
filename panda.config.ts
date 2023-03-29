@@ -11,6 +11,9 @@ export default defineConfig({
   outdir: "design-system",
   jsxFramework: "react",
   globalCss,
+  conditions: {
+    groupSelected: ".group:where([aria-selected=true], [data-selected]) &",
+  },
   theme: {
     extend: {
       recipes,
