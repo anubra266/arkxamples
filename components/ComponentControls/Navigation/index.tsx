@@ -10,6 +10,7 @@ import {
   Portal,
 } from "@ark-ui/react";
 import { useRef, useState } from "react";
+import { FiMenu } from "react-icons/fi";
 
 import { css } from "design-system/css/css";
 import { cx } from "design-system/css/cx";
@@ -21,6 +22,7 @@ import { FrameworkSwitch } from "components/ComponentControls/FrameworkSwitch";
 import { Search } from "components/ComponentControls/Navigation/Search";
 import { StyleSolutionSwitch } from "components/ComponentControls/StyleSolutionSwitch";
 import { StyleTypeSwitch } from "components/ComponentControls/StyleTypeSwitch";
+import { IconButton } from "components/IconButton";
 
 import { setComponentConfig } from "utils/component-config";
 import {
@@ -59,21 +61,25 @@ export function Navigation(props: ComponentControlsProps) {
     <Dialog initialFocusEl={() => inputRef.current} onClose={onDialogClose}>
       {({ close: closeDialog }) => (
         <>
-          <DialogTrigger>
+          <Flex align="center" gap="2">
+            <DialogTrigger>
+              <IconButton
+                aria-label="Format code"
+                title="Format code"
+                icon={<FiMenu />}
+                variant="tertiary"
+                size="xs"
+              />
+            </DialogTrigger>
             <panda.span
-              paddingBottom="1"
-              borderBottomWidth="1px"
-              borderColor={{ _dark: "purple.400" }}
               fontWeight="medium"
               fontSize="sm"
               cursor="pointer"
-              _hover={{
-                color: { base: "", _dark: "purple.400" },
-              }}
+              color="fg.default"
             >
               {component?.label ?? "Components"}
             </panda.span>
-          </DialogTrigger>
+          </Flex>
           <Portal>
             <DialogBackdrop className={dialogClassName} />
             <DialogContainer

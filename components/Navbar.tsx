@@ -15,7 +15,7 @@ export function Navbar() {
       borderBottomWidth="1px"
       borderColor="border.default"
     >
-      <panda.span fontSize="lg" fontWeight="medium">
+      <panda.span fontSize="lg" fontWeight="medium" color="fg.default">
         <em>Ark</em>xamples
       </panda.span>
       <Flex ml="auto" gap="2">
