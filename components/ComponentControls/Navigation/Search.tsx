@@ -62,6 +62,9 @@ export function Search(props: SearchProps) {
                 ref={inputRef}
                 className={cx(input())}
                 placeholder="Search components..."
+                onFocus={() => {
+                  inputRef.current.click();
+                }}
               />
             </ComboboxControl>
 
