@@ -35,6 +35,17 @@ createApp(Main).mount('#root')
 import App from "./App.vue";
 
 import { watchEffect } from "vue";
+import { useScriptTag } from '@vueuse/core'
+
+useScriptTag(
+  'https://cdn.tailwindcss.com',
+  // on script tag loaded.
+  () => {
+    tailwind.config = {
+      darkMode: "class"
+    }
+  },
+)
 
 watchEffect(() => {
   window.parent.postMessage({ action: "getColorMode" }, "*");
@@ -76,7 +87,8 @@ watchEffect(() => {
   "dependencies": {
     "core-js": "^3.26.1",
     "vue": "^3.2.45",
-    "@ark-ui/vue": "rc"
+    "@ark-ui/vue": "rc",
+    "@vueuse/core": "latest"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^5.0.8",
