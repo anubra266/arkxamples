@@ -1,4 +1,4 @@
-import { Framework } from "utils/component-config/constants";
+import { Framework, StyleSolution } from "utils/component-config/constants";
 
 export const components = [
   { id: "accordion", label: "Accordion" },
@@ -22,17 +22,31 @@ export const components = [
   { id: "tooltip", label: "Tooltip" },
 ] as const;
 
-export const arkPackage = {
-  [Framework.REACT]: {
-    "@ark-ui/react": "0.0.0-rc-20230319215607",
-    "react-icons": "latest",
-  },
-  [Framework.SOLID]: undefined,
-  [Framework.VUE]: undefined,
-};
-
 export const templates = {
   [Framework.REACT]: "react",
   [Framework.SOLID]: "solid",
   [Framework.VUE]: undefined,
 } as const;
+
+export const getArkPackage = (
+  framework: Framework,
+  styleSolution: StyleSolution
+) => {
+  if (framework === Framework.REACT) {
+    const packages = {
+      "@ark-ui/react": "0.0.0-rc-20230319215607",
+      "react-icons": "latest",
+      "react-helmet": "latest",
+    };
+    switch (styleSolution) {
+      case StyleSolution.VANILLA_CSS:
+        return packages;
+
+      case StyleSolution.TAILWIND:
+        return { ...packages };
+
+      default:
+        break;
+    }
+  } else return;
+};

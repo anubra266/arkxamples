@@ -4,7 +4,9 @@ import { ComponentId } from "utils/types";
 import { useComponentConfig } from "./useComponentConfig";
 
 export const useComponentSetup = (componentId: ComponentId) => {
-  const { framework, styleSolution, styleType } = useComponentConfig();
+  const config = useComponentConfig();
+  if (!config) return;
+  const { framework, styleSolution, styleType } = config;
 
   const component = getComponent(componentId as any);
   if (!component) {

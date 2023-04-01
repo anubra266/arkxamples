@@ -7,7 +7,7 @@ export enum Framework {
 export enum StyleSolution {
   VANILLA_CSS = "VANILLA_CSS",
   // PANDA_CSS = "PANDA_CSS",
-  // TAILWIND = "TAILWIND",
+  TAILWIND = "TAILWIND",
 }
 
 export enum StyleType {
@@ -52,16 +52,16 @@ export const STYLE_SOLUTIONS = {
   //     },
   //   ],
   // },
-  // [StyleSolution.TAILWIND]: {
-  //   label: "Tailwind",
-  //   value: StyleSolution.TAILWIND,
-  //   types: [
-  //     {
-  //       label: "Inline Style",
-  //       value: StyleType.INLINE,
-  //     },
-  //   ],
-  // },
+  [StyleSolution.TAILWIND]: {
+    label: "Tailwind",
+    value: StyleSolution.TAILWIND,
+    types: [
+      {
+        label: "Inline Style",
+        value: StyleType.INLINE,
+      },
+    ],
+  },
 };
 
 export const defaultConfig = {

@@ -33,12 +33,11 @@
 }
 
 [data-scope="checkbox"][data-part="control"][data-focus] {
-  --shadow: #ede9fe;
-  box-shadow: 0 0 0 4px var(--shadow);
+  box-shadow: 0 0 0 4px #ede9fe;
 }
 
 .dark [data-scope="checkbox"][data-part="control"][data-focus] {
-  --shadow: #292524;
+  box-shadow: 0 0 0 4px #292524;
 }
 
 [data-scope="checkbox"][data-part="control"][data-hover] {
@@ -57,10 +56,6 @@
 
 .dark [data-scope="checkbox"][data-part="control"][data-checked] {
   color: black;
-}
-
-[data-scope="checkbox"][data-part="control"][data-checked]:hover {
-  background-color: var(--accent-default);
 }
 
 [data-scope="checkbox"][data-part="control"][data-indeterminate] {

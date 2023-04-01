@@ -3,7 +3,7 @@
 import { SandpackLayout, SandpackProvider } from "@codesandbox/sandpack-react";
 import { PropsWithChildren } from "react";
 
-import { arkPackage, templates } from "utils/component-setup/constants";
+import { getArkPackage, templates } from "utils/component-setup/constants";
 import { ComponentId } from "utils/types";
 import { useColorMode } from "utils/useColorMode";
 import { useComponentConfig } from "utils/useComponentConfig";
@@ -22,7 +22,7 @@ const ComponentLayout = (
 
   if (!componentConfig) return "Loading...";
 
-  const { framework } = componentConfig;
+  const { framework, styleSolution } = componentConfig;
 
   return (
     <SandpackProvider
@@ -36,7 +36,7 @@ const ComponentLayout = (
       }}
       customSetup={{
         dependencies: {
-          ...arkPackage[framework],
+          ...getArkPackage(framework, styleSolution),
         },
       }}
       files={componentDetails.files}
