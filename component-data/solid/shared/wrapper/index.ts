@@ -55,7 +55,8 @@ export const sharedSolidCode = {
     "dependencies": {
       "@ark-ui/solid": "0.0.0-rc-20230319215607",
       "solid-js": "^1.6.4",
-      "solid-icons": "latest"
+      "solid-icons": "latest",
+      "@solid-primitives/script-loader": "latest"
     },
     "devDependencies": {
       "vite": "^4.0.0",
@@ -68,10 +69,20 @@ export const sharedSolidCode = {
 
   "/index.tsx": /*javascript*/ `import { render } from "solid-js/web";
   import { createEffect } from "solid-js";
+  import { createScriptLoader } from "@solid-primitives/script-loader";
   
   import App from "./App";
   
   import "./index.css";
+
+  createScriptLoader({
+    src: "https://cdn.tailwindcss.com",
+    async onLoad() {
+      tailwind.config = {
+        darkMode: "class"
+      }
+    },
+  });
   
   function ColorModeScript() {
     createEffect(() => {
