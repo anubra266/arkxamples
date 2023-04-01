@@ -43,7 +43,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | ------------ | ----- | --- | ----- |
 | Accordion    | ⚪    | ⚪  | ⚪    |
 | Carousel     | ⚪    | ⚪  | ⚪    |
-| Checkbox     | 🟢    | 🟢  | ⚪    |
+| Checkbox     | 🟢    | 🟢  | 🟢    |
 | Dialog       | ⚪    | ⚪  | ⚪    |
 | Combobox     | ⚪    | ⚪  | ⚪    |
 | Editable     | ⚪    | ⚪  | ⚪    |
