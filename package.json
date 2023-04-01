@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "prepare": "panda",
-    "dev": "rm -rf .next && next dev",
+    "dev": "rm -rf .next design-system && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
