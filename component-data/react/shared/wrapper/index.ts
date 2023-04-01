@@ -4,6 +4,7 @@ export const sharedReactCode = {
   "/index.js": /*javascript*/ `
   import React, { StrictMode } from "react";
   import { createRoot } from "react-dom/client";
+  import { Helmet } from "react-helmet";
   import "./index.css";
   
   import App from "./App";
@@ -30,7 +31,21 @@ export const sharedReactCode = {
         }
       });
     }, []);
-    return null;
+    return (
+      <Helmet>
+        <script
+          onload="tailwindLoaded()"
+          src="https://cdn.tailwindcss.com"
+        ></script>
+        <script>
+          {\`function tailwindLoaded(){
+            tailwind.config = {
+              darkMode: "class"
+            }
+          }\`}
+        </script>
+      </Helmet>
+    );
   }
   
   const root = createRoot(document.getElementById("root"));
@@ -40,5 +55,6 @@ export const sharedReactCode = {
       <App />
     </StrictMode>
   );
+  
   `,
 };
