@@ -48,6 +48,7 @@ export const formatFiles = (files: Record<string, any>) => {
 
 export const formatCode = (code: string, fileName: string) => {
   const parser = getParser(fileName);
+  if (!parser) return code;
   try {
     return prettier.format(code, {
       parser,
@@ -62,9 +63,8 @@ export const formatCode = (code: string, fileName: string) => {
 };
 
 const getParser = (fileName: string) => {
-  if (fileName.endsWith("css")) return "css";
-  if (fileName.endsWith("js")) return "babel";
-  if (fileName.endsWith("jsx")) return "babel";
-  if (fileName.endsWith("tsx")) return "babel";
-  if (fileName.endsWith("vue")) return "vue";
+  const ext = fileName.split(".").at(-1);
+  if (ext === "css") return "css";
+  if (ext === "vue") return "vue";
+  if (["js", "jsx", "tsx"].includes(ext)) return "babel";
 };
