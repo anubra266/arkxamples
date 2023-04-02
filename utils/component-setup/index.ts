@@ -1,5 +1,6 @@
 import prettier from "prettier";
 import parserBabel from "prettier/parser-babel";
+import parserHtml from "prettier/parser-html";
 import parserPostCSS from "prettier/parser-postcss";
 
 import {
@@ -46,14 +47,16 @@ export const formatFiles = (files: Record<string, any>) => {
 };
 
 export const formatCode = (code: string, fileName: string) => {
+  const parser = getParser(fileName);
   try {
     return prettier.format(code, {
-      parser: getParser(fileName),
-      plugins: [parserBabel, parserPostCSS],
+      parser,
+      plugins: [parserHtml, parserBabel, parserPostCSS],
       semi: true,
       singleQuote: false,
     });
-  } catch {
+  } catch (e) {
+    console.log("e", e);
     return code;
   }
 };
@@ -63,6 +66,5 @@ const getParser = (fileName: string) => {
   if (fileName.endsWith("js")) return "babel";
   if (fileName.endsWith("jsx")) return "babel";
   if (fileName.endsWith("tsx")) return "babel";
-  // TODO
   if (fileName.endsWith("vue")) return "vue";
 };
