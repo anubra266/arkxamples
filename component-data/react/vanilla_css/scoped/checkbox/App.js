@@ -19,6 +19,7 @@ export default function Page() {
   return (
     <>
       <Checkbox
+        className="rootStyles"
         checked={allChecked}
         indeterminate={someChecked}
         onChange={(e) =>
@@ -27,17 +28,20 @@ export default function Page() {
       >
         {(state) => (
           <>
-            <CheckboxInput />
-            <CheckboxControl>
+            <CheckboxInput className="inputStyles" />
+            <CheckboxControl className="controlStyles">
               {state.isChecked && <CheckIcon />}
               {state.isIndeterminate && <MinusIcon />}
             </CheckboxControl>
-            <CheckboxLabel>Parent Checkbox</CheckboxLabel>
+            <CheckboxLabel className="labelStyles">
+              Parent Checkbox
+            </CheckboxLabel>
           </>
         )}
       </Checkbox>
       <div>
         <Checkbox
+          className="rootStyles"
           checked={checkedItems[0]}
           onChange={(e) =>
             setCheckedItems([e.checked === true, checkedItems[1]])
@@ -45,15 +49,18 @@ export default function Page() {
         >
           {(state) => (
             <>
-              <CheckboxInput />
-              <CheckboxControl>
+              <CheckboxInput className="inputStyles" />
+              <CheckboxControl className="controlStyles">
                 {state.isChecked && <CheckIcon />}
               </CheckboxControl>
-              <CheckboxLabel>Child Checkbox 1</CheckboxLabel>
+              <CheckboxLabel className="labelStyles">
+                Child Checkbox 1
+              </CheckboxLabel>
             </>
           )}
         </Checkbox>
         <Checkbox
+          className="rootStyles"
           checked={checkedItems[1]}
           onChange={(e) =>
             setCheckedItems([checkedItems[0], e.checked === true])
@@ -61,11 +68,13 @@ export default function Page() {
         >
           {(state) => (
             <>
-              <CheckboxInput />
-              <CheckboxControl>
+              <CheckboxInput className="inputStyles" />
+              <CheckboxControl className="controlStyles">
                 {state.isChecked && <CheckIcon />}
               </CheckboxControl>
-              <CheckboxLabel>Child Checkbox 2</CheckboxLabel>
+              <CheckboxLabel className="labelStyles">
+                Child Checkbox 2
+              </CheckboxLabel>
             </>
           )}
         </Checkbox>

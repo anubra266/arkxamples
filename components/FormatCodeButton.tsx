@@ -1,26 +1,17 @@
 import { useActiveCode, useSandpack } from "@codesandbox/sandpack-react";
-import prettier from "prettier";
-import parserBabel from "prettier/parser-babel";
-import parserPostCSS from "prettier/parser-postcss";
 import { ImMagicWand } from "react-icons/im";
 
 import { IconButton } from "components/IconButton";
 
+import { formatCode } from "utils/component-setup";
+
 export const FormatCodeButton = () => {
   const { code, updateCode } = useActiveCode();
-  const parser = useCodeParser();
+  const { sandpack } = useSandpack();
 
   const runPrettier = () => {
-    try {
-      const formattedCode = prettier.format(code, {
-        parser: parser,
-        plugins: [parserBabel, parserPostCSS],
-        semi: true,
-        singleQuote: false,
-      });
-
-      updateCode(formattedCode);
-    } catch {}
+    const formattedCode = formatCode(code, sandpack.activeFile);
+    updateCode(formattedCode);
   };
 
   return (
@@ -34,13 +25,3 @@ export const FormatCodeButton = () => {
     />
   );
 };
-
-function useCodeParser() {
-  const { sandpack } = useSandpack();
-  if (sandpack.activeFile.endsWith("css")) return "css";
-  if (sandpack.activeFile.endsWith("js")) return "babel";
-  if (sandpack.activeFile.endsWith("jsx")) return "babel";
-  if (sandpack.activeFile.endsWith("tsx")) return "babel";
-  // TODO
-  if (sandpack.activeFile.endsWith("vue")) return "vue";
-}

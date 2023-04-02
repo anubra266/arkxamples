@@ -19,47 +19,54 @@ export default function Page() {
   return (
     <>
       <Checkbox
+        class="rootStyles"
         checked={allChecked()}
         indeterminate={isIndeterminate()}
         onChange={(e) => setCheckedItems([e.checked, e.checked])}
       >
         {(state) => (
           <>
-            <CheckboxInput />
-            <CheckboxControl>
+            <CheckboxInput class="inputStyles" />
+            <CheckboxControl class="controlStyles">
               {state().isChecked && <CheckIcon />}
               {state().isIndeterminate && <MinusIcon />}
             </CheckboxControl>
-            <CheckboxLabel>Parent Checkbox</CheckboxLabel>
+            <CheckboxLabel class="labelStyles">Parent Checkbox</CheckboxLabel>
           </>
         )}
       </Checkbox>
       <div>
         <Checkbox
+          class="rootStyles"
           checked={checkedItems()[0]}
           onChange={(e) => setCheckedItems([e.checked, checkedItems()[1]])}
         >
           {(state) => (
             <>
-              <CheckboxInput />
-              <CheckboxControl>
+              <CheckboxInput class="inputStyles" />
+              <CheckboxControl class="controlStyles">
                 {state().isChecked && <CheckIcon />}
               </CheckboxControl>
-              <CheckboxLabel>Child Checkbox 1</CheckboxLabel>
+              <CheckboxLabel class="labelStyles">
+                Child Checkbox 1
+              </CheckboxLabel>
             </>
           )}
         </Checkbox>
         <Checkbox
+          class="rootStyles"
           checked={checkedItems()[1]}
           onChange={(e) => setCheckedItems([checkedItems()[0], e.checked])}
         >
           {(state) => (
             <>
-              <CheckboxInput />
-              <CheckboxControl>
+              <CheckboxInput class="inputStyles" />
+              <CheckboxControl class="controlStyles">
                 {state().isChecked && <CheckIcon />}
               </CheckboxControl>
-              <CheckboxLabel>Child Checkbox 2</CheckboxLabel>
+              <CheckboxLabel class="labelStyles">
+                Child Checkbox 2
+              </CheckboxLabel>
             </>
           )}
         </Checkbox>

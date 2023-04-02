@@ -1,6 +1,7 @@
 import { sharedReactCode } from "component-data/react/shared/wrapper";
+import { vanillaScopedTransform } from "component-data/utils";
 
-export default {
+export const checkbox = {
   files: {
     "/styles.css": require("!!raw-loader!./styles.css").default,
     "/App.js": require("./App.js").default,
@@ -10,3 +11,4 @@ export default {
   },
   visibleFiles: ["/App.js", "/styles.css", "/CheckIcon.js", "/MinusIcon.js"],
 };
+export default vanillaScopedTransform(checkbox);

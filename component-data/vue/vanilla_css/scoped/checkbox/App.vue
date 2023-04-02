@@ -20,6 +20,7 @@ const someChecked = computed(() => checkedItems.some(Boolean)) && !allChecked;
 
 <template>
   <Checkbox
+    class="rootStyles"
     @change="
       (checked) => {
         checkedItems[0] = checked;
@@ -30,27 +31,35 @@ const someChecked = computed(() => checkedItems.some(Boolean)) && !allChecked;
     v-model:indeterminate="someChecked"
     v-slot="{ isChecked, isIndeterminate }"
   >
-    <CheckboxInput />
-    <CheckboxControl>
+    <CheckboxInput class="inputStyles" />
+    <CheckboxControl class="controlStyles">
       <CheckIcon v-if="isChecked" />
       <MinusIcon v-if="isIndeterminate" />
     </CheckboxControl>
-    <CheckboxLabel>Parent Checkbox</CheckboxLabel>
+    <CheckboxLabel class="labelStyles">Parent Checkbox</CheckboxLabel>
   </Checkbox>
   <div>
-    <Checkbox v-model:checked="checkedItems[0]" v-slot="{ isChecked }">
-      <CheckboxInput />
-      <CheckboxControl>
+    <Checkbox
+      class="rootStyles"
+      v-model:checked="checkedItems[0]"
+      v-slot="{ isChecked }"
+    >
+      <CheckboxInput class="inputStyles" />
+      <CheckboxControl class="controlStyles">
         <CheckIcon v-if="isChecked" />
       </CheckboxControl>
-      <CheckboxLabel>Child Checkbox 1</CheckboxLabel>
+      <CheckboxLabel class="labelStyles">Child Checkbox 1</CheckboxLabel>
     </Checkbox>
-    <Checkbox v-model:checked="checkedItems[1]" v-slot="{ isChecked }">
-      <CheckboxInput />
-      <CheckboxControl>
+    <Checkbox
+      class="rootStyles"
+      v-model:checked="checkedItems[1]"
+      v-slot="{ isChecked }"
+    >
+      <CheckboxInput class="inputStyles" />
+      <CheckboxControl class="controlStyles">
         <CheckIcon v-if="isChecked" />
       </CheckboxControl>
-      <CheckboxLabel>Child Checkbox 2</CheckboxLabel>
+      <CheckboxLabel class="labelStyles">Child Checkbox 2</CheckboxLabel>
     </Checkbox>
   </div>
 </template>

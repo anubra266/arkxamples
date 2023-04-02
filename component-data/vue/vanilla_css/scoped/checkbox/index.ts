@@ -1,6 +1,7 @@
+import { vanillaScopedTransform } from "component-data/utils";
 import { sharedVueCode } from "component-data/vue/shared/wrapper";
 
-export default {
+export const checkbox = {
   files: {
     "/styles.css":
       require("!!raw-loader!component-data/react/vanilla_css/scoped/checkbox/styles.css")
@@ -12,3 +13,5 @@ export default {
   },
   visibleFiles: ["/App.vue", "/styles.css", "/CheckIcon.vue", "/MinusIcon.vue"],
 };
+
+export default vanillaScopedTransform(checkbox);
