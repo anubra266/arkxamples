@@ -1,9 +1,9 @@
 <script setup>
 import {
-Checkbox,
-CheckboxControl,
-CheckboxInput,
-CheckboxLabel
+  Checkbox,
+  CheckboxControl,
+  CheckboxInput,
+  CheckboxLabel,
 } from "@ark-ui/vue";
 import { computed, reactive } from "vue";
 

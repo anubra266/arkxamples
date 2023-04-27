@@ -23,9 +23,17 @@ export const replaceClassnames = (
 const stripExternalCSS = (code: string) =>
   code.replace('import "./styles.css";', "");
 
-const stripClassnames = (code: string) =>
-  code.replaceAll(/\s(className=|class=)(['"])[^'"]*\2/g, "");
+const stripClassnames = (code: string) => {
+  const regex = /class(?:Name)?\s*=\s*['"](\w+Styles)['"]/g;
 
+  return code.replace(regex, (match, cls) => {
+    if (cls.endsWith("Styles")) {
+      return "";
+    } else {
+      return match;
+    }
+  });
+};
 export const vanillaScopedTransform = (setup: ComponentSetup) => {
   return {
     ...setup,
