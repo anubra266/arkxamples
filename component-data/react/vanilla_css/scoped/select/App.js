@@ -8,8 +8,8 @@ import {
   SelectPositioner,
   SelectTrigger,
 } from "@ark-ui/react";
-import { FiChevronDown } from "react-icons/fi";
 
+import SelectIcon from "./SelectIcon";
 import "./styles.css";
 
 export default function Page() {
@@ -44,12 +44,3 @@ export default function Page() {
     </Select>
   );
 }
-
-const SelectIcon = (props) => {
-  const iconStyles = {
-    transform: props.isOpen ? "rotate(-180deg)" : undefined,
-    transition: "transform 0.2s",
-    transformOrigin: "center",
-  };
-  return <FiChevronDown style={iconStyles} />;
-};

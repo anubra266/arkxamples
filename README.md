@@ -29,7 +29,7 @@ Feel free to open a pull request for any of the unchecked components. The only r
 | Radio Group  | 🟢    | ⚪  | ⚪    |
 | Range Slider | 🟢    | ⚪  | ⚪    |
 | Rating       | 🟢    | ⚪  | ⚪    |
-| Select       | 🟢    | ⚪  | ⚪    |
+| Select       | 🟢    | 🟢  | ⚪    |
 | Slider       | 🟢    | ⚪  | ⚪    |
 | Splitter     | 🟢    | ⚪  | ⚪    |
 | Tabs         | 🟢    | ⚪  | ⚪    |
