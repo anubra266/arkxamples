@@ -10,8 +10,8 @@ import {
   MenuTriggerItem,
   Portal,
 } from "@ark-ui/react";
-import { FiChevronRight } from "react-icons/fi";
 
+import ChevronRightIcon from "./ChevronRightIcon";
 import "./styles.css";
 
 export default function Page() {
@@ -52,7 +52,7 @@ export default function Page() {
             >
               <MenuTriggerItem>
                 <span className="flex_1">More options</span>
-                <FiChevronRight />
+                <ChevronRightIcon />
               </MenuTriggerItem>
               <Portal>
                 <MenuPositioner>

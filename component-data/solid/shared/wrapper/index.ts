@@ -55,7 +55,6 @@ export const sharedSolidCode = {
     "dependencies": {
       "@ark-ui/solid": "0.0.0-rc-20230319215607",
       "solid-js": "^1.6.4",
-      "solid-icons": "latest",
       "@solid-primitives/script-loader": "latest"
     },
     "devDependencies": {

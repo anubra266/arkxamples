@@ -6,8 +6,9 @@ import {
   NumberInputIncrementTrigger,
   NumberInputScrubber,
 } from "@ark-ui/react";
-import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
+import ChevronDownIcon from "./ChevronDownIcon";
+import ChevronUpIcon from "./ChevronUpIcon";
 import "./styles.css";
 
 export default function Page() {
@@ -18,12 +19,12 @@ export default function Page() {
       <NumberInputControl>
         <NumberInputIncrementTrigger>
           <button>
-            <FiChevronUp />
+            <ChevronUpIcon />
           </button>
         </NumberInputIncrementTrigger>
         <NumberInputDecrementTrigger>
           <button>
-            <FiChevronDown />
+            <ChevronDownIcon />
           </button>
         </NumberInputDecrementTrigger>
       </NumberInputControl>

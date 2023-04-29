@@ -9,8 +9,8 @@ import {
   ToastTitle,
   useToast,
 } from "@ark-ui/react";
-import { FiX } from "react-icons/fi";
 
+import CloseIcon from "./CloseIcon";
 import "./styles.css";
 
 export default function Page() {
@@ -45,7 +45,7 @@ export default function Page() {
                           aria-label="Close toast"
                           className="button button_tertiary button_size__sm close_button"
                         >
-                          <FiX />
+                          <CloseIcon />
                         </button>
                       </ToastCloseTrigger>
                     </Toast>

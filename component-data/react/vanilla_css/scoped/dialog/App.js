@@ -9,8 +9,8 @@ import {
   DialogTrigger,
   Portal,
 } from "@ark-ui/react";
-import { FiX } from "react-icons/fi";
 
+import CloseIcon from "./CloseIcon";
 import "./styles.css";
 
 export default function Page() {
@@ -46,7 +46,7 @@ export default function Page() {
                 aria-label="Close dialog"
                 className="button button_tertiary button_size__md close_button"
               >
-                <FiX />
+                <CloseIcon />
               </button>
             </DialogCloseTrigger>
           </DialogContent>

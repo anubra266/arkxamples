@@ -7,8 +7,8 @@ import {
   HoverCardTrigger,
   Portal,
 } from "@ark-ui/react";
-import { FiMapPin } from "react-icons/fi";
 
+import MapPinIcon from "./MapPinIcon";
 import "./styles.css";
 
 export default function Page() {
@@ -61,7 +61,7 @@ export default function Page() {
                   </p>
                 </div>
                 <div className="stack row fg_subtle align_center">
-                  <FiMapPin className="map_icon" />
+                  <MapPinIcon />
                   <p className="text_xs">Dubai, United Arab Emirates</p>
                 </div>
               </div>

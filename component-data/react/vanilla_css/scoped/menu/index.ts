@@ -4,7 +4,8 @@ export default {
   files: {
     "/styles.css": require("!!raw-loader!./styles.css").default,
     "/App.js": require("./App.js").default,
+    "/ChevronRightIcon.js": require("./ChevronRightIcon.js").default,
     ...sharedReactCode,
   },
-  visibleFiles: ["/App.js", "/styles.css"],
+  visibleFiles: ["/App.js", "/styles.css", "/ChevronRightIcon.js"],
 };

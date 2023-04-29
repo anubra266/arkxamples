@@ -1,16 +1,11 @@
-export default function AccordionIcon(props) {
-  const iconStyles = {
-    transform: props.isOpen ? "rotate(-180deg)" : undefined,
-    transition: "transform 0.2s",
-    transformOrigin: "center",
-  };
+export default function ChevronUpIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="1em"
       height="1em"
       viewBox="0 0 24 24"
-      style={iconStyles}
+      style={{ transform: "rotate(-180deg)" }}
     >
       <path
         fill="none"
