@@ -3,6 +3,8 @@ import {
   Select,
   SelectContent,
   SelectOption,
+  SelectOptionGroup,
+  SelectOptionGroupLabel,
   SelectPositioner,
   SelectTrigger,
 } from "@ark-ui/react";
@@ -25,12 +27,15 @@ export default function Page() {
             <SelectPositioner>
               <SelectContent>
                 <SelectOption value="react" label="React" />
-                <SelectOption value="solid" label="Solid">
-                  Solid
-                </SelectOption>
-                <SelectOption value="vue" label="Vue">
-                  Vue
-                </SelectOption>
+                <SelectOption value="solid" label="Solid" />
+                <SelectOption value="vue" label="Vue" />
+
+                <SelectOptionGroup>
+                  <SelectOptionGroupLabel>Styling</SelectOptionGroupLabel>
+                  <SelectOption value="css" label="CSS" />
+                  <SelectOption value="css-panda" label="CSS Panda" />
+                  <SelectOption value="tailwind" label="Tailwind" />
+                </SelectOptionGroup>
               </SelectContent>
             </SelectPositioner>
           </Portal>

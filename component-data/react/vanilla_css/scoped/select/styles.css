@@ -91,3 +91,11 @@
 [data-scope="select"][data-part="option"]:last-child {
   margin-bottom: 0;
 }
+
+[data-scope="select"][data-part="option-group-label"] {
+  user-select: none;
+  padding: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
