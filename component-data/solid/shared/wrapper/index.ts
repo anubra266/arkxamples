@@ -53,7 +53,7 @@ export const sharedSolidCode = {
       "serve": "vite preview"
     },
     "dependencies": {
-      "@ark-ui/solid": "0.0.0-rc-20230319215607",
+      "@ark-ui/solid": "latest",
       "solid-js": "^1.6.4",
       "@solid-primitives/script-loader": "latest"
     },

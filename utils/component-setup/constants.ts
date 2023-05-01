@@ -34,7 +34,7 @@ export const getArkPackage = (
 ) => {
   if (framework === Framework.REACT) {
     const packages = {
-      "@ark-ui/react": "0.0.0-rc-20230319215607",
+      "@ark-ui/react": "latest",
       "react-icons": "latest",
       "react-helmet": "latest",
     };

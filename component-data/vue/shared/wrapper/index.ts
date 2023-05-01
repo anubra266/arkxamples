@@ -87,7 +87,7 @@ watchEffect(() => {
   "dependencies": {
     "core-js": "^3.26.1",
     "vue": "^3.2.45",
-    "@ark-ui/vue": "rc",
+    "@ark-ui/vue": "latest",
     "@vueuse/core": "latest"
   },
   "devDependencies": {
